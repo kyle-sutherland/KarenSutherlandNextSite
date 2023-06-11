@@ -37,3 +37,8 @@ code {
   flex-direction: column;
   align-items: center;
 }
+
+.navigation {
+  margin-outside: 20px;
+  display: flex;
+}
