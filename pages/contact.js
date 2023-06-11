@@ -42,6 +42,7 @@ export default function Home() {
                   className='form-control'
                   id='emailField'
                   placeholder='name@example.com'
+                  name='emailField'
                 />
               </div>
               <div className='mb-3'>
@@ -53,12 +54,14 @@ export default function Home() {
                 <textarea
                   className='form-control'
                   id='emailBodyField'
-                  rows='3'></textarea>
+                  rows='3'
+                  name='emailBody'></textarea>
                 <div className='mb-3 pt-3'>
                   <input
                     type='submit'
                     className='btn btn-primary mb-3'
                     value='Send'
+                    name='send'
                   />
                 </div>
               </div>
