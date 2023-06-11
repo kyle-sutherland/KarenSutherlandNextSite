@@ -63,6 +63,7 @@ export default function Contact() {
         <textarea
           className='form-control'
           id='message'
+          type='message'
           rows='3'
           name='message'></textarea>
         <div className='mb-3 pt-3'>
