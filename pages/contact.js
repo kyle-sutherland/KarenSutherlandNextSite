@@ -30,47 +30,63 @@ export default function Contact() {
 
   const contactForm = (
     <form
-      name='contact'
+      className='container'
       method='POST'
-      data-netlify='true'
+      name='contact-form'
       action='contact/?success=true'
+      data-netlify='true'
       data-netlify-honeypot='bot-field'>
+      <input
+        type='hidden'
+        name='subject'
+        value={`${submitterName} has sent a message from your website`}
+      />
+      <input
+        type='hidden'
+        name='form-name'
+        value='contact-form'
+      />
       <p hidden>
         <label>
-          Don't fill this out: <input name='bot-field' />
+          Don’t fill this out: <input name='bot-field' />
         </label>
       </p>
-      <div className='mb-3 col-xxl-8'>
-        <label
-          htmlFor='emailField'
-          className='form-label'>
-          Email address
-        </label>
-        <input
-          type='email'
-          className='form-control'
-          id='emailField'
-          placeholder='name@example.com'
-          name='emailField'
-        />
+      <div className='mb-3 row g-3'>
+        <div className='col'>
+          <label htmlFor='name'>Name</label>
+          <input
+            id='name'
+            name='name'
+            required
+            onChange={(e) => setSubmitterName(e.target.value)}
+            type='text'
+            className='form-control'
+          />
+        </div>
+        <div className='col'>
+          <label htmlFor='email'>E-mail Address</label>
+          <input
+            id='email'
+            type='email'
+            name='email'
+            required
+            className='form-control'
+          />
+        </div>
       </div>
       <div className='mb-3'>
-        <label
-          htmlFor='message'
-          className='form-label'>
-          Example textarea
-        </label>
+        <label htmlFor='message'>Message</label>
         <textarea
-          className='form-control'
           id='message'
-          rows='3'
-          name='message'></textarea>
+          name='message'
+          required
+          className='form-control'
+        />
         <div className='mb-3 pt-3'>
           <button
-            type='submit'
-            className='btn btn-primary mb-3'
-            name='send'>
-            Send
+            className='btn btn-primary'
+            type='submit'>
+            Submit
           </button>
         </div>
       </div>
