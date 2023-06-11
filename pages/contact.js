@@ -55,11 +55,11 @@ export default function Home() {
                   id='emailBodyField'
                   rows='3'></textarea>
                 <div className='mb-3 pt-3'>
-                  <button
+                  <input
                     type='submit'
-                    className='btn btn-primary mb-3'>
-                    Send
-                  </button>
+                    className='btn btn-primary mb-3'
+                    value='Send'
+                  />
                 </div>
               </div>
             </form>
