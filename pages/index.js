@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import Header from '@components/header';
+import {Content, EndNote} from "@components/content";
 
 export default function Home() {
   return (<>
       <Header title='Karen Sutherland'/>
       <div className='container-fluid bg-light'>
-        <div className='container-fluid p-5 bg-light rounded-bottom'>
+        <Content>
           <p className='lead'>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
@@ -21,7 +22,7 @@ export default function Home() {
             ea voluptate velit esse quam nihil molestiae consequatur, vel illum
             qui dolorem eum fugiat quo voluptas nulla pariatur?
           </p>
-        </div>
+        </Content>
       </div>
       <div className='cutout container-fluid p-4 bg-transparent text-dark'>
         <div className='container col-8'>
@@ -34,7 +35,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='container-fluid p-4 bg-light endnote rounded-bottom'>
+      <EndNote>
         <div className='container-fluid col-auto card-row'>
           <div className='row'>
             <div className='container-fluid col-auto p-3'>
@@ -72,6 +73,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </EndNote>
     </>);
 }

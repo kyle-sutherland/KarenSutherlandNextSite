@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import Header from '@components/header';
+import {Content} from "@components/content";
 
 export default function Home() {
   return (
     <>
       <Header title='About Karen Sutherland' />
-      <div className='container-fluid p-5 bg-light rounded-bottom'>
+      <Content>
         <div className='row'>
           <div className='container-fluid align-content-center col-3 portrait-container'>
             <img src='/portrait.jpg' className='img-fluid portrait'/>
@@ -27,7 +28,7 @@ export default function Home() {
             qui dolorem eum fugiat quo voluptas nulla pariatur?
           </p></div>
         </div>
-      </div>
+      </Content>
     </>
   );
 }

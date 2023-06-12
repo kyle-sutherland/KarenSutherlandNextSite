@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '@components/header';
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
+import {Content} from "@components/content";
 
 export default function Contact() {
   const [submitterName, setSubmitterName] = useState('');
@@ -96,7 +97,7 @@ export default function Contact() {
   return (
     <>
       <Header title='Get in touch' />
-      <div className='container-fluid p-5 bg-light rounded-bottom'>
+      <Content>
         <div className='row'>
           <div className='conainer-fluid col-md'>
             <p className='lead'>
@@ -121,7 +122,7 @@ export default function Contact() {
             {formVisible ? contactForm : confirmationMessage}
           </div>
         </div>
-      </div>
+      </Content>
     </>
   );
 }

@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import Header from '@components/header';
+import {Content} from "@components/content";
 
 export default function Home() {
   return (
     <>
       <Header title='Fees' />
-      <div className='container-fluid p-5 bg-light rounded-bottom'>
+      <Content>
         <p className='lead'>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
@@ -21,7 +22,7 @@ export default function Home() {
           ea voluptate velit esse quam nihil molestiae consequatur, vel illum
           qui dolorem eum fugiat quo voluptas nulla pariatur?
         </p>
-      </div>
+      </Content>
     </>
   );
 }
