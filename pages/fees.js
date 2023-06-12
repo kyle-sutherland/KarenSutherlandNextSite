@@ -3,9 +3,9 @@ import Header from '@components/header';
 
 export default function Home() {
   return (
-    <div className='container-fluid rounded col-lg-8 p-0 align-content-center bg-light'>
+    <>
       <Header title='Fees' />
-      <div className='container-fluid p-4'>
+      <div className='container-fluid p-4 bg-light rounded-bottom'>
         <p className='description'>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
@@ -22,6 +22,6 @@ export default function Home() {
           qui dolorem eum fugiat quo voluptas nulla pariatur?
         </p>
       </div>
-    </div>
+    </>
   );
 }

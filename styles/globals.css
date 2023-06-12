@@ -49,5 +49,21 @@ code {
 }
 
 .endnote {
-  height: 20vh;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+.portrait {
+  vertical-align: middle;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.card {
+  width: 18rem;
+}
+
+.card-row{
+  max-width: 76rem;
 }

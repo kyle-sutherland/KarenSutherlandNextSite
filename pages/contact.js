@@ -94,9 +94,9 @@ export default function Contact() {
   );
 
   return (
-    <div className='container-fluid rounded col-lg-10 col-xl-8 p-0 align-content-center bg-light'>
+    <>
       <Header title='Get in touch' />
-      <div className='container-fluid p-5'>
+      <div className='container-fluid p-5 bg-light rounded-bottom'>
         <div className='row'>
           <div className='conainer-fluid col-md'>
             <p className='description'>
@@ -122,6 +122,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
