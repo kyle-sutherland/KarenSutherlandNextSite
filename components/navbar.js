@@ -7,7 +7,7 @@ export default function Navigation() {
         bg='light'
         expand='lg'>
         <div className='container'>
-          <Navbar.Brand href='/'>Karen Sutherland Therapy</Navbar.Brand>
+          <Navbar.Brand href='/' className='text-dark'>Karen Sutherland Therapy</Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <div className='justify-content-end'><Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto'>

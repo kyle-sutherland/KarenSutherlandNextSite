@@ -26,8 +26,8 @@ export default function Home() {
       </div>
       <div className='cutout container-fluid p-4 bg-transparent text-dark'>
         <div className='container col-8'>
-          <div className='container-fluid p-4'><h1>A bunch of nice text</h1></div>
-          <div className='container-fluid col-6'><h3>
+          <div className='container-fluid p-4 text-ghostwhite'><h1>A bunch of nice text</h1></div>
+          <div className='container-fluid col-6 text-ghostwhite'><h3>
             This is where you could place some nice, welcoming
             text about Karen Sutherland. Who doesn't want to
             know about Karen Sutherland?
@@ -38,36 +38,36 @@ export default function Home() {
       <EndNote>
         <div className='container-fluid col-auto card-row'>
           <div className='row'>
-            <div className='container-fluid col-auto p-3'>
+            <div className='container-fluid col-auto p-3 text-dark'>
               <div className="card">
                 <img src="..." className="card-img-top" alt="..."/>
                 <div className="card-body">
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">Some quick example text to build on the card title and make up the bulk of
                     the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                  <a href="#" className="btn btn-primary text-dark">Go somewhere</a>
                 </div>
               </div>
             </div>
-            <div className='container-fluid col-auto p-3'>
+            <div className='container-fluid col-auto p-3 text-dark'>
               <div className="card">
                 <img src="..." className="card-img-top" alt="..."/>
                 <div className="card-body">
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">Some quick example text to build on the card title and make up the bulk of
                     the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                  <a href="#" className="btn btn-primary text-dark">Go somewhere</a>
                 </div>
               </div>
             </div>
-            <div className='container-fluid col-auto p-3'>
+            <div className='container-fluid col-auto p-3 text-dark'>
               <div className="card">
                 <img src="..." className="card-img-top" alt="..."/>
                 <div className="card-body">
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">Some quick example text to build on the card title and make up the bulk of
                     the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                  <a href="#" className="btn btn-primary text-dark">Go somewhere</a>
                 </div>
               </div>
             </div>
