@@ -19,7 +19,7 @@ export default function Contact() {
       </p>
 
       <button
-        className='btn btn-primary'
+        className='btn btn-primary text-dark'
         onClick={() =>
           router.replace('/contact', undefined, { shallow: true })
         }>
