@@ -75,7 +75,9 @@ code {
 
 .content-header {
   background-color: var(--color-primary);
-  color: var(--color-secondary)
+  color: var(--color-secondary);
+  padding-top: 2rem;
+  padding-bottom: 1.75rem;
 }
 
 :root{
