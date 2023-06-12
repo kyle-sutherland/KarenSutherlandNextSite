@@ -99,7 +99,7 @@ export default function Contact() {
       <div className='container-fluid p-5 bg-light rounded-bottom'>
         <div className='row'>
           <div className='conainer-fluid col-md'>
-            <p className='description'>
+            <p className='lead'>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae

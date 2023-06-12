@@ -5,8 +5,8 @@ export default function Home() {
   return (<>
       <Header title='Karen Sutherland'/>
       <div className='container-fluid bg-light'>
-        <div className='container-fluid p-4 bg-light rounded-bottom'>
-          <p className='description'>
+        <div className='container-fluid p-5 bg-light rounded-bottom'>
+          <p className='lead'>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
             ab illo inventore veritatis et quasi architecto beatae vitae dicta
@@ -23,11 +23,15 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className='cutout container-fluid p-4 bg-transparent'>
+      <div className='cutout container-fluid p-4 bg-transparent text-dark'>
         <div className='container col-8'>
           <div className='container-fluid p-4'><h1>A bunch of nice text</h1></div>
-          <div className='container-fluid col-6'><h3>This is where you could place some nice, welcoming text about Karen Sutherland. Who doesn't want to
-            know about Karen Sutherland?</h3></div>
+          <div className='container-fluid col-6'><h3>
+            This is where you could place some nice, welcoming
+            text about Karen Sutherland. Who doesn't want to
+            know about Karen Sutherland?
+          </h3>
+          </div>
         </div>
       </div>
       <div className='container-fluid p-4 bg-light endnote rounded-bottom'>

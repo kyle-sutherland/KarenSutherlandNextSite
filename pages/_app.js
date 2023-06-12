@@ -1,5 +1,6 @@
 import '@styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '@styles/customizer.scss'
 import { SSRProvider } from "react-bootstrap";
 import Layout from '../components/layout'
 

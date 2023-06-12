@@ -72,3 +72,18 @@ code {
 .card-row{
   max-width: 76rem;
 }
+
+.content-header {
+  background-color: var(--color-primary);
+  color: var(--color-secondary)
+}
+
+:root{
+  --color-primary: #c5d3ff;
+  --color-secondary: #111111;
+}
+
+.btn-custom{
+  background-color: var(--color-primary);
+  color: var(--color-secondary)
+}

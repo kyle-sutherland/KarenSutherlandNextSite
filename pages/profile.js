@@ -10,7 +10,8 @@ export default function Home() {
           <div className='container-fluid align-content-center col-3 portrait-container'>
             <img src='/portrait.jpg' className='img-fluid portrait'/>
           </div>
-          <div className='container-fluid p-1 col-8 profile-container'><p className='description'>
+          <div className='container-fluid p-1 col-8 profile-container'>
+            <p className='lead'>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
             ab illo inventore veritatis et quasi architecto beatae vitae dicta
