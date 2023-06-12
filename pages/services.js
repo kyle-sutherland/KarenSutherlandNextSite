@@ -4,7 +4,7 @@ import Header from '@components/header';
 export default function Home() {
   return (
     <div className='container-fluid rounded col-lg-8 p-0 align-content-center bg-light'>
-      <Header title='Services' />
+      <Header title='Services'/>
       <div className='container-fluid p-4'>
         <p className='description'>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem

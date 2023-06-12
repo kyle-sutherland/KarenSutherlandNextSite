@@ -32,13 +32,22 @@ code {
 }
 
 .content {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.navigation {
-  margin-outside: 20px;
+
+.cutout {
+  height: 50vh;
+  text-align: center;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.endnote {
+  height: 20vh;
 }

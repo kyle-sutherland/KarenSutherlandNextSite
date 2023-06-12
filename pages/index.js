@@ -3,8 +3,9 @@ import Header from '@components/header';
 
 export default function Home() {
   return (
-    <div className='container-fluid rounded col-lg-8 p-0 align-content-center bg-light'>
-      <Header title='Karen Sutherland' />
+    <div className='container-fluid rounded col-lg-8 p-0 align-content-center'>
+      <Header title='Karen Sutherland'/>
+      <div className='container-fluid bg-light'>
       <div className='container-fluid p-4'>
         <p className='description'>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -22,6 +23,16 @@ export default function Home() {
           qui dolorem eum fugiat quo voluptas nulla pariatur?
         </p>
       </div>
+      </div>
+        <div className='cutout container-fluid p-4 bg-transparent'>
+          <div className='container'>
+          <h1>A bunch of nice text</h1>
+        </div>
+        </div>
+        <div className='container-fluid p-4 bg-light endnote rounded-bottom'>
+
+        </div>
+
     </div>
   );
 }
