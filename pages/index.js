@@ -5,7 +5,7 @@ export default function Home() {
   return (<>
       <Header title='Karen Sutherland'/>
       <div className='container-fluid bg-light'>
-        <div className='container-fluid p-5 bg-light rounded-bottom'>
+        <div className='container-fluid p-5 col-xxl-6'>
           <p className='lead'>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae

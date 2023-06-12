@@ -1,16 +1,15 @@
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 
 export default function Navigation() {
   return (
-    <div className='container-fluid col-lg-10 col-xxl-8 p-0 p-lg-5 rounded sticky-top'>
+    <div className='container-fluid p-0 sticky-top'>
       <Navbar
         bg='light'
-        expand='lg'
-        className='rounded'>
-        <Container>
+        expand='lg'>
+        <div className='container'>
           <Navbar.Brand href='/'>Karen Sutherland Therapy</Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse id='basic-navbar-nav'>
+          <div className='justify-content-end'><Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto'>
               <Nav.Link href='/'>Home</Nav.Link>
               <Nav.Link href='/profile'>Profile</Nav.Link>
@@ -18,8 +17,8 @@ export default function Navigation() {
               <Nav.Link href='/fees'>Fees</Nav.Link>
               <Nav.Link href='/contact'>Contact</Nav.Link>
             </Nav>
-          </Navbar.Collapse>
-        </Container>
+          </Navbar.Collapse></div>
+        </div>
       </Navbar>
     </div>
   );

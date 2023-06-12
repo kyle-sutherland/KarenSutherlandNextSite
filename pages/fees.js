@@ -6,7 +6,8 @@ export default function Home() {
     <>
       <Header title='Fees' />
       <div className='container-fluid p-5 bg-light rounded-bottom'>
-        <p className='lead'>
+        <div className='container-fluid col-auto col-xxl-6 align-items-center'>
+          <p className='lead'>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta
@@ -21,6 +22,7 @@ export default function Home() {
           ea voluptate velit esse quam nihil molestiae consequatur, vel illum
           qui dolorem eum fugiat quo voluptas nulla pariatur?
         </p>
+        </div>
       </div>
     </>
   );
