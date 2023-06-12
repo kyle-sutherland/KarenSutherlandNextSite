@@ -14,7 +14,7 @@ export default function Layout({ children }) {
       </Head>
       <Navigation />
       <div className='content'>
-        <div className='container-fluid rounded col-lg-8 col-xxl-6 p-0 align-content-center pb-5'>
+        <div className='container-fluid p-0 align-content-center pb-5'>
         <main>{children}</main>
         </div>
       </div>
