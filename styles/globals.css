@@ -32,15 +32,16 @@ code {
 }
 
 .content {
-  height: 100vh;
+  height: 97vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 
 .cutout {
-  height: 50vh;
+  height: 40vh;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -74,18 +75,11 @@ code {
 }
 
 .content-header {
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
-  padding-top: 2rem;
-  padding-bottom: 1.75rem;
+  padding-top: 1rem;
+  padding-bottom: 0.7rem;
 }
 
 :root{
   --color-primary: #c5d3ff;
   --color-secondary: #111111;
-}
-
-.btn-custom{
-  background-color: var(--color-primary);
-  color: var(--color-secondary)
 }
