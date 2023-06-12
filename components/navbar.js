@@ -5,9 +5,10 @@ export default function Navigation() {
     <div className='container-fluid p-0 col-lg-10 col-xxl-8 p-0 p-lg-5 rounded sticky-top'>
       <Navbar
         bg='light'
-        expand='lg'>
+        expand='lg'
+        className='rounded'>
         <div className='container'>
-          <Navbar.Brand href='/'>Karen Sutherland Therapy</Navbar.Brand>
+          <Navbar.Brand href='/' className='text-dark'>Karen Sutherland Therapy</Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <div className='justify-content-end'><Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto'>

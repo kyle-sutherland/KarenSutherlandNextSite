@@ -1,6 +1,8 @@
 export function Content({children}){
   return(<div className='container-fluid p-5 bg-light rounded-bottom'>
+    <div className='container-fluid'>
   <>{children}</>
+    </div>
   </div>);
 }
 export function EndNote({children}){

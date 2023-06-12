@@ -82,10 +82,11 @@ export default function Contact() {
           name='message'
           required
           className='form-control'
+          rows='10'
         />
         <div className='mb-3 pt-3'>
           <button
-            className='btn btn-primary'
+            className='btn btn-primary text-dark'
             type='submit'>
             Submit
           </button>

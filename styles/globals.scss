@@ -1,0 +1,16 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+$custom-colors: (
+        "accent": #74d0fe,
+        "charcoal": #3E424D,
+        "slate": #6B7288,
+        "coolgray": #98A3C4,
+        'primary': #c5d3ff,
+        'dark': #3E424D,
+        'ghostwhite': #F1F4FF
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
