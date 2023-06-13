@@ -2,7 +2,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 
 export default function Navigation() {
   return (
-    <div className='container-fluid p-0 col-lg-10 col-xxl-8 p-0 pt-lg-5 px-lg-5 rounded sticky-top'>
+    <div className='container-fluid p-0 col-lg-8 col-xxl-6 pt-lg-5 rounded sticky-top'>
       <Navbar
         bg='light'
         expand='lg'

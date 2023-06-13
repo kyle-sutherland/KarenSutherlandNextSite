@@ -1,9 +1,11 @@
 import Head from 'next/head';
 import Header from '@components/header';
 import {Content, EndNote} from "@components/content";
+import {AdvancedBannerTop} from "@components/advancedBannerTop";
 
 export default function Home() {
   return (<>
+    {/*<AdvancedBannerTop/>*/}
       <Header title='Karen Sutherland'/>
       <div className='container-fluid bg-light'>
         <Content>
@@ -20,8 +22,8 @@ export default function Home() {
       </div>
       <div className='cutout container-fluid p-4 bg-transparent text-dark'>
         <div className='container col-8'>
-          <div className='container-fluid p-4 text-ghostwhite'><h1>A bunch of nice text</h1></div>
-          <div className='container-fluid col-6 text-ghostwhite'><h3>
+          <div className='container-fluid text-ghostwhite'><h1>A bunch of nice text</h1></div>
+          <div className='container-fluid col-xl-6 text-ghostwhite'><h3>
             This is where you could place some nice, welcoming
             text about Karen Sutherland. Who doesn't want to
             know about Karen Sutherland?
