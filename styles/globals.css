@@ -31,14 +31,12 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
 }
 
-.content {
+.page-container {
   min-height: 90rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
-
 
 .cutout {
   max-height: 60vh;
@@ -47,6 +45,11 @@ code {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.cutout-text {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .endnote {

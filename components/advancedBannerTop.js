@@ -5,7 +5,7 @@ export const AdvancedBannerTop = () => {
     image:
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/105988/banner-background.jpg",
     translateY: [0, 50],
-    opacity: [1, 0.3],
+    opacity: [1, 0],
     scale: [1.05, 1, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true
   };

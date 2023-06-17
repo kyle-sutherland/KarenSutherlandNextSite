@@ -5,7 +5,7 @@ import {AdvancedBannerTop} from "@components/advancedBannerTop";
 
 export default function Home() {
   return (<>
-    {/*<AdvancedBannerTop/>*/}
+    <AdvancedBannerTop/>
       <Header title='Karen Sutherland'/>
       <div className='container-fluid bg-light'>
         <Content>
@@ -21,9 +21,9 @@ export default function Home() {
         </Content>
       </div>
       <div className='cutout container-fluid p-4 bg-transparent text-dark'>
-        <div className='container col-8'>
-          <div className='container-fluid text-ghostwhite'><h1>A bunch of nice text</h1></div>
-          <div className='container-fluid col-xl-6 text-ghostwhite'><h3>
+        <div className='container cutout-text col-8'>
+          <div className='container-fluid'><h1>A bunch of nice text</h1></div>
+          <div className='container-fluid col-xl-6'><h3>
             This is where you could place some nice, welcoming
             text about Karen Sutherland. Who doesn't want to
             know about Karen Sutherland?
