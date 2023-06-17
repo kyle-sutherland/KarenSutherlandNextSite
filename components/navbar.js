@@ -6,11 +6,12 @@ export default function Navigation() {
       <Navbar
         bg='light'
         expand='lg'
-        className='rounded'>
-        <div className='container'>
-          <Navbar.Brand href='/' className='text-dark'>Karen Sutherland Therapy</Navbar.Brand>
+        className='rounded p-0'>
+          <div className='container-fluid p-0'><div className='container-fluid rounded p-0 bg-primary'><Navbar.Brand href='/' className='text-dark'><img
+              src='/navbar-graphic.svg'
+              className='d-inline-block img-fluid rounded' height='64px' width='240px'/></Navbar.Brand></div>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <div className='justify-content-end'><Navbar.Collapse id='basic-navbar-nav'>
+          <div className='justify-content-end p-3'><Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto'>
               <Nav.Link href='/'>Home</Nav.Link>
               <Nav.Link href='/profile'>Profile</Nav.Link>

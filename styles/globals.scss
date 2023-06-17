@@ -1,19 +1,24 @@
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 
-//color palette
+//color palette1
 $charcoal: #3E424D;
 $slate: #6B7288;
 $coolgray: #98A3C4;
 $periwinkle: #c5d3ff;
 $ghostwhite: #F1F4FF;
 
+//palette2
+$purple-gray: #383742;
+$pale-lilac: #A4A1C3;
+$painter-gray: #79778F;
+
 $custom-colors: (
-        'dark': $charcoal,
-        'primary': $periwinkle,
+        'dark': $purple-gray,
+        'primary': $pale-lilac,
         'content': $slate,
-        'light': $ghostwhite,
         'accent': $coolgray
+
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);

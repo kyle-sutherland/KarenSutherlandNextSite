@@ -9,7 +9,7 @@ export default function Layout({ children }) {
         <title>Karen Sutherland Counciling</title>
         <link
           rel='icon'
-          href='/favicon.ico'
+          href='/favicon.png'
         />
       </Head>
       <Navigation />
