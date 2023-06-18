@@ -1,5 +1,5 @@
 import {Nav, Navbar} from 'react-bootstrap';
-import {Parallax} from "react-scroll-parallax";
+import {Collapse} from "react-bootstrap";
 
 export default function Navigation() {
     return (
@@ -15,7 +15,8 @@ export default function Navigation() {
                             className='d-inline-block img-fluid border-start border-end border-accent bg-primary' height='64px' width='240px' alt=''/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls='basic-navbar-nav'/>
-                    <div className='justify-content-end'><Navbar.Collapse id='basic-navbar-nav'>
+                    <div className='justify-content-end'>
+                        <Navbar.Collapse id='basic-navbar-nav'>
                         <Nav className='me-auto bg-light px-4'>
                             <Nav.Link href='/'>Resources</Nav.Link>
                             <Nav.Link href='/profile'>Profile</Nav.Link>
@@ -27,6 +28,5 @@ export default function Navigation() {
                     </div>
                 </div>
             </Navbar>
-
     );
 }
