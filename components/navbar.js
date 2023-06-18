@@ -3,11 +3,11 @@ import {Parallax} from "react-scroll-parallax";
 
 export default function Navigation() {
     return (
-        <div className='container-fluid p-0 rounded sticky-top'>
             <Navbar
                 bg='light'
                 expand='lg'
-                className='rounded py-0 navi'>
+                className='rounded py-0 navi'
+                sticky='top'>
                 <div className='container-fluid col-lg-10 col-xxl-8 p-0'>
                     <Navbar.Brand href='/' className='text-dark p-0'>
                         <img
@@ -27,6 +27,6 @@ export default function Navigation() {
                     </div>
                 </div>
             </Navbar>
-        </div>
+
     );
 }
