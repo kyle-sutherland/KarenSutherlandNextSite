@@ -1,5 +1,6 @@
 import { ParallaxBanner } from "react-scroll-parallax";
 
+'use client'
 export const AdvancedBannerTop = () => {
   const background = {
     opacity: [1, 0],
