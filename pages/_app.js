@@ -7,13 +7,11 @@ import {ParallaxProvider} from "react-scroll-parallax";
 
 function Application({Component, pageProps}) {
     return (
-        <ParallaxProvider>
             <SSRProvider>
                 <Layout>
                     <Component {...pageProps} />
                 </Layout>
             </SSRProvider>
-        </ParallaxProvider>
     )
 }
 

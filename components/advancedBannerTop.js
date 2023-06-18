@@ -1,11 +1,6 @@
 import { ParallaxBanner } from "react-scroll-parallax";
 
-'use client'
 export const AdvancedBannerTop = () => {
-  const background = {
-    opacity: [1, 0],
-    shouldAlwaysCompleteAnimation: true,
-  };
 
   const headline = {
     translateY: [0, 30],
@@ -26,6 +21,11 @@ export const AdvancedBannerTop = () => {
     children: <img src='/kslogo-banner-large.svg' className='img-fluid rounded' alt=''/>,
     scrollStart: 0,
     scrollEnd: 470
+  };
+  const background = {
+    opacity: [1, 0],
+    shouldAlwaysCompleteAnimation: true,
+    children: <div className='container rounded-top bg-primary'></div>
   };
 
   return (
