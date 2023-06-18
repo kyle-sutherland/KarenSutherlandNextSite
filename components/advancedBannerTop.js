@@ -20,6 +20,7 @@ export const AdvancedBannerTop = () => {
 
   const foreground = {
     opacity: [1, 0, 'easeOutCubic'],
+    scale: [1, 0.6, 'easeOutCubic'],
     shouldAlwaysCompleteAnimation: true,
     children: <img src='/kslogo-banner-large.svg' className='img-fluid rounded' alt=''/>,
     scrollStart: 0,

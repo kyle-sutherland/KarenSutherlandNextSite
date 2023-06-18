@@ -13,7 +13,7 @@ export default function Layout({ children }) {
         />
       </Head>
       <Navigation />
-        <div className='page-container container-fluid rounded col-lg-10 col-xxl-8 p-0  pt-5 align-content-center pb-5'>
+        <div className='page-container container-fluid rounded col-lg-10 col-xxl-8 p-0 pt-5 align-content-center pb-5'>
         <main>{children}</main>
       </div>
       <Footer />

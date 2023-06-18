@@ -13,12 +13,61 @@ $purple-gray: #383742;
 $pale-lilac: #A4A1C3;
 $painter-gray: #79778F;
 
-$custom-colors: (
-        'dark': $purple-gray,
-        'primary': $pale-lilac,
-        'content': $slate,
-        'accent': $coolgray
+//palette3
+/* Color Theme Swatches in Hex */
+$color-theme_background-1-hex: #024059;
+$color-theme_background-2-hex: #8AB0BF;
+$color-theme_background-3-hex: #035E73;
+$color-theme_background-4-hex: #307B8C;
+$color-theme_background-5-hex: #F2F2F2;
 
+/* Color Theme Swatches in RGBA */
+$color-theme_background-1-rgba: rgba(2,64,89, 1);
+$color-theme_background-2-rgba: rgba(138,176,191, 1);
+$color-theme_background-3-rgba: rgba(3,94,115, 1);
+$color-theme_background-4-rgba: rgba(48,123,140, 1);
+$color-theme_background-5-rgba: rgba(242,242,242, 1);
+
+
+//palette4
+/* Color Theme Swatches in Hex */
+$My-Color-Theme2-1-hex: #939CBF;
+$My-Color-Theme2-2-hex: #8AB0BF;
+$My-Color-Theme2-3-hex: #BFA59D;
+$My-Color-Theme2-4-hex: #BFAD77;
+$My-Color-Theme2-5-hex: #80BFAF;
+
+/* Color Theme Swatches in RGBA */
+$My-Color-Theme2-1-rgba: rgba(147,156,191, 1);
+$My-Color-Theme2-2-rgba: rgba(138,176,191, 1);
+$My-Color-Theme2-3-rgba: rgba(191,165,157, 1);
+$My-Color-Theme2-4-rgba: rgba(191,173,119, 1);
+$My-Color-Theme2-5-rgba: rgba(128,191,175, 1);
+
+
+//palett5
+/* Color Theme Swatches in Hex */
+$My-Color-Theme-1-hex: #8995CC;
+$My-Color-Theme-2-hex: #8AB0BF;
+$My-Color-Theme-3-hex: #90B0D6;
+$My-Color-Theme-4-hex: #90D5D6;
+$My-Color-Theme-5-hex: #89CCBA;
+
+/* Color Theme Swatches in RGBA */
+$My-Color-Theme-1-rgba: rgba(137,149,204, 1);
+$My-Color-Theme-2-rgba: rgba(138,176,191, 1);
+$My-Color-Theme-3-rgba: rgba(144,176,214, 1);
+$My-Color-Theme-4-rgba: rgba(144,213,214, 1);
+$My-Color-Theme-5-rgba: rgba(137,204,186, 1);
+
+
+$custom-colors: (
+        'dark': $charcoal,
+        'primary':$color-theme_background-2-hex,
+        'content': $slate,
+        'accent': $color-theme_background-4-hex,
+        'light': $color-theme_background-5-hex,
+        'greenblue': $color-theme_background-1-hex
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
