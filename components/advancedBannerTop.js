@@ -25,7 +25,7 @@ export const AdvancedBannerTop = () => {
   const background = {
     opacity: [1, 0],
     shouldAlwaysCompleteAnimation: true,
-    children: <div className='container rounded-top bg-primary'></div>
+    children: <div className='container rounded-top bg-thistle-blossom'></div>
   };
 
   return (

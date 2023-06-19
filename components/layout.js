@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Navigation />
-        <div className='page-container container-fluid rounded col-lg-10 col-xxl-8 px-0 pt-5 align-content-center pb-5'>
+        <div className='page-container container mx-auto pt-8'>
         <main>{children}</main>
       </div>
       <Footer />

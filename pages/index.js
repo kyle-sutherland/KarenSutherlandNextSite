@@ -5,12 +5,12 @@ import {Parallax, ParallaxProvider} from "react-scroll-parallax";
 
 export default function Home() {
     return (<>
-        <div className='container-fluid rounded-top bg-primary border-bottom border-accent'>
-            <img src='/kslogo-banner-large.svg' className='img-fluid rounded-top bg-primary'/>
+        <div className='container bg-thistle-blossom rounded-t-lg'>
+            <img src='/kslogo-banner-large.svg' className='bg-thistle-blossom rounded-t-lg'/>
         </div>
-                <div className='container-fluid bg-light'>
+                <div className='container-fluid bg-bleached-silk'>
                     <Content>
-                        <p className='lead'>
+                        <p className='text-lg'>
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
                             ab illo inventore veritatis et quasi architecto beatae vitae dicta
