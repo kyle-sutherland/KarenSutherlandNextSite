@@ -5,7 +5,7 @@ import {Parallax, ParallaxProvider} from "react-scroll-parallax";
 
 export default function Home() {
     return (<>
-        <div className='container bg-thistle-blossom rounded-t-lg'>
+        <div className='container bg-thistle-blossom border-b border-blue-green rounded-t-lg'>
             <img src='/kslogo-banner-large.svg' className='bg-thistle-blossom rounded-t-lg'/>
         </div>
                 <div className='container-fluid bg-bleached-silk'>
