@@ -1,38 +1,88 @@
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-//color palette1
-$charcoal: #3E424D;
-$slate: #6B7288;
-$coolgray: #98A3C4;
-$periwinkle: #c5d3ff;
-$ghostwhite: #F1F4FF;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  //font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-image: url('../public/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
 
-//palette2
-$purple-gray: #383742;
-$pale-lilac: #A4A1C3;
-$painter-gray: #79778F;
+* {
+  box-sizing: border-box;
+}
 
-//palette3
-/* Color Theme Swatches in Hex */
-$color-theme_background-1-hex: #024059;
-$color-theme_background-2-hex: #8AB0BF;
-$color-theme_background-3-hex: #035E73;
-$color-theme_background-4-hex: #307B8C;
-$color-theme_background-5-hex: #F2F2F2;
+main {
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-$custom-colors: (
-        'dark': $charcoal,
-        'primary':$color-theme_background-2-hex,
-        'content': $slate,
-        'accent': $color-theme_background-4-hex,
-        'light': $color-theme_background-5-hex,
-        'greenblue': $color-theme_background-1-hex
-);
+.page-container {
+  /*min-height: 90rem;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-$font-family-base:
-    (ui-serif, Georgia, Cambria, "Times New Roman", Times, serif);
+.cutout {
+  max-height: 60vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
-$theme-colors: map-merge($theme-colors, $custom-colors);
+.cutout-text {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+.endnote {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+.portrait {
+  vertical-align: middle;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.portrait-container {
+  padding-left: 20rem;
+  max-width: 20rem;
+}
+
+.card {
+  width: 18rem;
+}
+
+.card-row{
+  max-width: 76rem;
+}
+
+.content-header {
+  padding-top: 1rem;
+  padding-bottom: 0.7rem;
+}
+
+.full {
+  height: 80vh;
+}
+
+.navi{
+  height: 64px
+}
