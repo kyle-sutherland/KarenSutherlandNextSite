@@ -1,5 +1,5 @@
 export function Content({children}){
-  return(<div className='container p-8 bg-bleached-silk rounded-b-lg'>
+  return(<div className='container p-10 bg-bleached-silk rounded-b-lg'>
     <div className='container text-slate text-xl'>
   <>{children}</>
     </div>

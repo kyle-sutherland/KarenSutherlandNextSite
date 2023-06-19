@@ -1,8 +1,7 @@
-import Head from 'next/head';
 import Header from '@components/header';
-import React, { useState } from 'react';
-import { useRouter } from 'next/router';
-import { Content } from "@components/content";
+import React, {useState} from 'react';
+import {useRouter} from 'next/router';
+import {Content} from "@components/content";
 
 export default function Contact() {
   const [submitterName, setSubmitterName] = useState('');
@@ -31,7 +30,6 @@ export default function Contact() {
 
   const contactForm = (
     <form
-      className='container'
       method='POST'
       name='contact-form'
       action='contact/?success=true'
@@ -49,44 +47,60 @@ export default function Contact() {
       />
       <p hidden>
         <label>
-          Don’t fill this out: <input name='bot-field' />
+          Don’t fill this out: <input name='bot-field'/>
         </label>
       </p>
-      <div className='mb-3 row g-3'>
-        <div className='col'>
-          <label htmlFor='name'>Name</label>
-          <input
-            id='name'
-            name='name'
-            required
-            onChange={(e) => setSubmitterName(e.target.value)}
-            type='text'
-            className='form-control'
-          />
+      <div className='space-y-12'>
+        <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6'>
+          <div className='sm:col-span-4'>
+            <label htmlFor='name' className='block text-sm font-medium leading-6'>Name</label>
+            <div className='mt-2'>
+              <div
+                className='flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md'>
+                <input
+                  id='name'
+                  name='name'
+                  required
+                  onChange={(e) => setSubmitterName(e.target.value)}
+                  type='text'
+                  className='block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6'
+                />
+              </div>
+            </div>
+          </div>
+          <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6'>
+            <div className='sm:col-span-4'>
+              <label htmlFor='email' className='block text-sm font-medium leading-6'>E-mail Address</label>
+              <div className='mt-2'>
+                <div
+                  className='flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md'>
+                  <input
+                    id='email'
+                    type='email'
+                    name='email'
+                    required
+                    className='block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6'
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className='col'>
-          <label htmlFor='email'>E-mail Address</label>
-          <input
-            id='email'
-            type='email'
-            name='email'
-            required
-            className='form-control'
-          />
+        <div className='col-span-full'>
+          <label htmlFor='message'>Message</label>
+          <div className='mt-2'>
+            <textarea
+              id='message'
+              name='message'
+              required
+              className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+              rows={3}
+            />
+          </div>
         </div>
-      </div>
-      <div className='mb-3'>
-        <label htmlFor='message'>Message</label>
-        <textarea
-          id='message'
-          name='message'
-          required
-          className='form-control'
-          rows='10'
-        />
-        <div className='mb-3 pt-3'>
+        <div className='mt-6 flex items-center justify-end gap-x-6'>
           <button
-            className='btn btn-primary text-dark'
+            className='rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
             type='submit'>
             Submit
           </button>
@@ -97,7 +111,7 @@ export default function Contact() {
 
   return (
     <>
-      <Header title='Get in touch' />
+      <Header title='Get in touch'/>
       <Content>
         <div className='row'>
           <div className='conainer-fluid col-md'>
