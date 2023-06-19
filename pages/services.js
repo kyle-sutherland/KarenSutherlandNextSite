@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Header from '@components/header';
 import {Content} from "@components/content";
 

@@ -1,7 +1,6 @@
 import {Disclosure} from '@headlessui/react'
 
 
-
 const navigation = [
     {name: 'Home', href: '/', current: null},
     {name: 'Profile', href: '/profile', current: null},
@@ -20,7 +19,7 @@ export default function Navbar() {
         <Disclosure as='nav' className="w-full bg-bleached-silk shadow sticky top-0 font-serif">
             {({open}) => (
                 <>
-                    <div className="justify-between pr-4 mx-auto lg:max-w-7xl md:items-center md:flex md:pr-8">
+                    <div className="justify-between pr-4 lg:pr-0 mx-auto lg:max-w-7xl md:items-center md:flex md:pr-8">
                         <div>
                             <div className="flex items-center justify-between md:block">
                                 <a href="/">
