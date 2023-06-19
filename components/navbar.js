@@ -5,11 +5,11 @@ export default function Navigation() {
     const [navbar, setNavbar] = useState(false);
     return (
         <nav className="w-full bg-bleached-silk shadow sticky top-0">
-            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+            <div className="justify-between pr-4 mx-auto lg:max-w-7xl md:items-center md:flex md:pr-8">
                 <div>
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                    <div className="flex items-center justify-between md:block">
                         <a href="/">
-                            <h2 className="text-2xl text-white font-bold">NEXT JS</h2>
+                                <img src='/kslogo-navbar-graphic1.svg' width={'240px'} height={'64px'} alt='' className='bg-thistle-blossom'/>
                         </a>
                         <div className="md:hidden">
                             <button
@@ -57,23 +57,28 @@ export default function Navigation() {
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className="text-charcoal">
-                                <Link href="/">
-                                    <a>Home</a>
+                                <Link href="/profile">
+                                    <a>Profile</a>
                                 </Link>
                             </li>
                             <li className="text-charcoal">
-                                <Link href="/">
-                                    <a>Blogs</a>
+                                <Link href="/services">
+                                    <a>Services</a>
                                 </Link>
                             </li>
                             <li className="text-charcoal">
-                                <Link href="/about">
-                                    <a>About US</a>
+                                <Link href="/fees">
+                                    <a>Fees</a>
                                 </Link>
                             </li>
                             <li className="text-charcoal">
                                 <Link href="/contact">
-                                    <a>Contact US</a>
+                                    <a>Contact</a>
+                                </Link>
+                            </li>
+                            <li className='text-charcoal'>
+                                <Link href='/resources'>
+                                    <a>Resources</a>
                                 </Link>
                             </li>
                         </ul>

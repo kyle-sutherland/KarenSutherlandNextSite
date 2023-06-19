@@ -22,13 +22,13 @@ export default function Home() {
                     </Content>
                 </div>
         <div className='cutout container-fluid px-4 bg-transparent text-dark'>
-            <div className='container cutout-text col-8'>
-                <div className='container-fluid'><h1>A bunch of nice text</h1></div>
-                <div className='container-fluid col-xl-6'><h3>
+            <div className='container cutout-text'>
+                <div className='container mx-auto md:w-1/3'><p className={'text-slate text-4xl p-2'}>A bunch of nice text</p></div>
+                <div className='container mx-auto md:w-1/3'><p className={'text-slate text-3xl p-2'}>
                     This is where you could place some nice, welcoming
                     text about Karen Sutherland. Who doesn't want to
                     know about Karen Sutherland?
-                </h3>
+                </p>
                 </div>
             </div>
         </div>
