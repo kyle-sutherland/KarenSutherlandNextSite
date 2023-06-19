@@ -1,12 +1,13 @@
-export function Content({children}){
-  return(<div className='container p-10 bg-bleached-silk rounded-b-lg'>
+export function Content({ children }) {
+  return (<div className='container p-12 bg-bleached-silk rounded-b-lg'>
     <div className='container text-slate text-xl'>
-  <>{children}</>
+      <>{children}</>
     </div>
   </div>);
 }
-export function EndNote({children}){
-  return(<div className='container p-4 bg-bleached-silk endnote rounded-b-lg'>
+
+export function EndNote({ children }) {
+  return (<div className='container p-4 bg-bleached-silk endnote rounded-b-lg'>
     <>{children}</>
-  </div> )
+  </div>)
 }

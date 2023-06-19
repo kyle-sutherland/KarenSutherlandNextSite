@@ -1,15 +1,14 @@
-import Head from 'next/head';
 import Header from '@components/header';
 import {Content} from "@components/content";
 
 export default function Home() {
   return (
     <>
-      <Header title='About Karen Sutherland' />
+      <Header title='About Karen Sutherland'/>
       <Content>
-            <img src='/portrait.jpg' className='portrait' alt=''/>
-          <div className='containers p-1 profile-container'>
-            <p className='lead'>
+        <img src='/portrait.jpg' className='portrait' alt=''/>
+        <div className='containers p-1 profile-container'>
+          <p className='lead'>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
             ab illo inventore veritatis et quasi architecto beatae vitae dicta
@@ -24,7 +23,7 @@ export default function Home() {
             ea voluptate velit esse quam nihil molestiae consequatur, vel illum
             qui dolorem eum fugiat quo voluptas nulla pariatur?
           </p>
-          </div>
+        </div>
       </Content>
     </>
   );
