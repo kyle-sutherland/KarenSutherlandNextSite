@@ -12,8 +12,7 @@
     "next": "^12.1.5",
     "react": "^18.0.0",
     "react-bootstrap": "^2.7.4",
-    "react-dom": "^18.0.0",
-    "react-scroll-parallax": "^3.4.2"
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "sass": "^1.63.3"
