@@ -17,11 +17,10 @@ export default function Navigation() {
         <div className='justify-content-end lead'>
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto bg-light px-4'>
-              <Nav.Link href='/'>Resources</Nav.Link>
               <Nav.Link href='/profile'>Profile</Nav.Link>
               <Nav.Link href='/services'>Services</Nav.Link>
-              <Nav.Link href='/fees'>Fees</Nav.Link>
               <Nav.Link href='/contact'>Contact</Nav.Link>
+              <Nav.Link href='/'>Resources</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </div>
