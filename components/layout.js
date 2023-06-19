@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Navigation />
-        <div className='page-container container mx-auto pt-8'>
+        <div className='page-container container lg:max-w-7xl mx-auto pb-8 pt-8'>
         <main>{children}</main>
       </div>
       <Footer />

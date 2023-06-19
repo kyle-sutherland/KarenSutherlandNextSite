@@ -7,11 +7,8 @@ export default function Home() {
     <>
       <Header title='About Karen Sutherland' />
       <Content>
-        <div className='row'>
-          <div className='container-fluid align-content-center col-3 portrait-container'>
-            <img src='/portrait.jpg' className='img-fluid portrait'/>
-          </div>
-          <div className='container-fluid p-1 col-8 profile-container'>
+            <img src='/portrait.jpg' className='portrait' alt=''/>
+          <div className='containers p-1 profile-container'>
             <p className='lead'>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
@@ -26,8 +23,8 @@ export default function Home() {
             ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
             ea voluptate velit esse quam nihil molestiae consequatur, vel illum
             qui dolorem eum fugiat quo voluptas nulla pariatur?
-          </p></div>
-        </div>
+          </p>
+          </div>
       </Content>
     </>
   );
