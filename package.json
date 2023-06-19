@@ -8,6 +8,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.15",
     "next": "^12.1.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

@@ -3,7 +3,7 @@ export default function Footer() {
       <>
         <footer>
           <div className="w-full fixed bottom-0 text-center bg-bleached-silk p-1">
-            <small>Copyright &copy; Karen Martin Sutherland</small>
+            <p className={'text-xs font-light'}>Copyright &copy; Karen Martin Sutherland</p>
           </div>
         </footer>
       </>
