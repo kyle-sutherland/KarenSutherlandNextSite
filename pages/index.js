@@ -49,7 +49,7 @@ export default function Home() {
                   </p>
                   <a
                     href="#"
-                    className="rounded-md bg-bosporus px-3 py-2 text-sm text-bleached-silk shadow-sm hover:bg-bosporus-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-thistle-blossom"
+                    className="rounded-md bg-bosporus px-3 py-2 text-sm text-bleached-silk shadow-sm hover:bg-opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-thistle-blossom"
                   >
                     Go somewhere
                   </a>
