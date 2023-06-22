@@ -75,7 +75,7 @@ export default function Navbar() {
                       href={item.href}
                       className={classNames(
                         item.current
-                          ? "text-gray-900 bg-gray-300"
+                          ? "text-gray-900 bg-gray-200"
                           : "text-charcoal bg-inherit hover:bg-gray-200 hover:text-gray-900",
                         "rounded-md px-3 py-2"
                       )}
