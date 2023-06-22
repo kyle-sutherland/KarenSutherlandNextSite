@@ -1,13 +1,13 @@
-import Header from '@components/header';
-import React, {useState} from 'react';
-import {useRouter} from 'next/router';
-import {Content} from "@components/content";
+import Header from "@components/header";
+import React, { useState } from "react";
+import { useRouter } from "next/router";
+import { Content } from "@components/content";
 
 export default function Contact() {
-  const [submitterName, setSubmitterName] = useState('');
+  const [submitterName, setSubmitterName] = useState("");
   const router = useRouter();
   const confirmationScreenVisible =
-    router.query?.success && router.query.success === 'true';
+    router.query?.success && router.query.success === "true";
   const formVisible = !confirmationScreenVisible;
 
   const confirmationMessage = (
@@ -18,90 +18,93 @@ export default function Contact() {
       </p>
 
       <button
-        className='btn btn-primary text-dark'
-        onClick={() =>
-          router.replace('/contact', undefined, { shallow: true })
-        }>
-        {' '}
-        Submit Another Response{' '}
+        className="btn btn-primary text-dark"
+        onClick={() => router.replace("/contact", undefined, { shallow: true })}
+      >
+        {" "}
+        Submit Another Response{" "}
       </button>
     </React.Fragment>
   );
 
   const contactForm = (
     <form
-      method='POST'
-      name='contact-form'
-      action='contact/?success=true'
-      data-netlify='true'
-      data-netlify-honeypot='bot-field'>
+      method="POST"
+      name="contact-form"
+      action="contact/?success=true"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
       <input
-        type='hidden'
-        name='subject'
+        type="hidden"
+        name="subject"
         value={`${submitterName} has sent a message from your website`}
       />
-      <input
-        type='hidden'
-        name='form-name'
-        value='contact-form'
-      />
+      <input type="hidden" name="form-name" value="contact-form" />
       <p hidden>
         <label>
-          Don’t fill this out: <input name='bot-field'/>
+          Don’t fill this out: <input name="bot-field" />
         </label>
       </p>
-      <div className='space-y-12'>
-        <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6'>
-          <div className='sm:col-span-4'>
-            <label htmlFor='name' className='block text-sm font-medium leading-6'>Name</label>
-            <div className='mt-2'>
-              <div
-                className='flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md'>
+      <div>
+        <div className="mt-0">
+          <label htmlFor="name" className="block text-sm font-medium leading-6">
+            Name
+          </label>
+          <div className="mt-2">
+            <div className="flex sm:max-w-md">
+              <input
+                id="name"
+                name="name"
+                required
+                onChange={(e) => setSubmitterName(e.target.value)}
+                type="text"
+                className="block flex-1 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-4 focus:ring-inset focus:ring-thistle-blossom-light sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+          <div className="mt-6">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium leading-6"
+            >
+              E-mail Address
+            </label>
+            <div className="mt-2">
+              <div className="flex sm:max-w-md">
                 <input
-                  id='name'
-                  name='name'
+                  id="email"
+                  type="email"
+                  name="email"
                   required
-                  onChange={(e) => setSubmitterName(e.target.value)}
-                  type='text'
-                  className='block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6'
+                  className="block flex-1 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-4 focus:ring-inset focus:ring-thistle-blossom-light sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
           </div>
-          <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6'>
-            <div className='sm:col-span-4'>
-              <label htmlFor='email' className='block text-sm font-medium leading-6'>E-mail Address</label>
-              <div className='mt-2'>
-                <div
-                  className='flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md'>
-                  <input
-                    id='email'
-                    type='email'
-                    name='email'
-                    required
-                    className='block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6'
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <div className='col-span-full'>
-          <label htmlFor='message'>Message</label>
-          <div className='mt-2'>
+        <div className="mt-6">
+          <label
+            htmlFor="message"
+            className="block text-sm font-medium leading-6"
+          >
+            Message
+          </label>
+          <div className="mt-2">
             <textarea
-              id='message'
-              name='message'
+              id="message"
+              name="message"
               required
-              className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+              className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-4 focus:ring-inset focus:ring-thistle-blossom-light sm:text-sm sm:leading-6"
               rows={3}
             />
           </div>
         </div>
-        <div className='mt-6 flex items-center justify-end gap-x-6'>
+        <div className="mt-6 flex items-center justify-end gap-x-6">
           <button
-            className='rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
-            type='submit'>
+            className="rounded-md bg-bosporus px-3 py-2 text-sm text-bleached-silk shadow-sm hover:bg-opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-thistle-blossom"
+            type="submit"
+          >
             Submit
           </button>
         </div>
@@ -111,11 +114,11 @@ export default function Contact() {
 
   return (
     <>
-      <Header title='Get in touch'/>
+      <Header title="Get in touch" />
       <Content>
-        <div className='row'>
-          <div className='conainer-fluid col-md'>
-            <p className='lead'>
+        <div className="grid grid-flow-row lg:grid-flow-col gap-16">
+          <div className="conainer">
+            <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -132,8 +135,7 @@ export default function Contact() {
               voluptas nulla pariatur?
             </p>
           </div>
-
-          <div className='container-fluid col-md'>
+          <div className="lg:w-96">
             {formVisible ? contactForm : confirmationMessage}
           </div>
         </div>
