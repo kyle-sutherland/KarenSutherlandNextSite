@@ -2,6 +2,7 @@ import Header from "@components/header";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { Content } from "@components/content";
+import { ActionButton } from "@components/buttons";
 
 export default function Contact() {
   const [submitterName, setSubmitterName] = useState("");
@@ -101,12 +102,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="mt-6 flex items-center justify-end gap-x-6">
-          <button
-            className="rounded-md bg-bosporus px-3 py-2 text-sm text-bleached-silk shadow-sm hover:bg-opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-thistle-blossom"
-            type="submit"
-          >
-            Submit
-          </button>
+          <ActionButton type="submit" text="Submit" />
         </div>
       </div>
     </form>
@@ -116,24 +112,41 @@ export default function Contact() {
     <>
       <Header title="Get in touch" />
       <Content>
-        <div className="grid grid-flow-row lg:grid-flow-col gap-16">
+        <div className="grid grid-flow-row lg:grid-flow-col gap-16 m-2 mt-0">
           <div className="conainer">
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora incidunt ut labore
-              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-              veniam, quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-              vel eum iure reprehenderit qui in ea voluptate velit esse quam
-              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-              voluptas nulla pariatur?
+            <p className="font-semibold py-2">
+              Get in Touch with Karen Sutherland
             </p>
+            <p className="pb-1">
+              Reaching out for support is a commendable step towards
+              understanding and growth. Whether you have questions, need more
+              information about the services offered, or are ready to begin your
+              therapeutic journey, Karen is here to assist.
+            </p>
+
+            <p className="pb-1">
+              Karen offers both in-person and online sessions to cater to your
+              convenience. If you prefer an online session, please mention it
+              when scheduling your appointment.
+            </p>
+
+            <p className="pb-1">
+              If you have any questions or would like to schedule an
+              appointment, please fill out the form and Karen will get back to
+              you as soon as possible.
+            </p>
+
+            <p className="font-semibold py-2">Contact Details:</p>
+            <ul>
+              <li>Phone: (613) 702-1841</li>
+            </ul>
+
+            <p className="py-2">Location:</p>
+            <p>2211 Riverside Drive, 404, Ottawa, ON K1H</p>
+
+            <p className="py-2">Office Hours:</p>
+            <p>Monday to Friday: 9:00 AM - 6:00 PM</p>
+            <p>Weekends: By appointment only</p>
           </div>
           <div className="lg:w-96">
             {formVisible ? contactForm : confirmationMessage}
