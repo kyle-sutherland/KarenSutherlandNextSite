@@ -26,12 +26,12 @@ export default function Home() {
       <div className="cutout container-fluid px-4 bg-transparent text-dark">
         <div className="container cutout-text">
           <div className="container mx-auto md:w-1/3">
-            <p className="text-slate font-semibold text-4xl p-2">
+            <p className="text-gray-900 font-semibold text-4xl p-2">
               Discover a space where you're truly heard.
             </p>
           </div>
           <div className="container mx-auto md:w-1/3">
-            <p className="text-slate text-3xl p-2">
+            <p className="text-gray-900 text-3xl p-2">
               Karen Sutherland, MSW, RSW, offers personalized therapy sessions
               tailored to your unique needs. With a foundation in evidence-based
               practices and a commitment to genuine collaboration, Karen ensures
