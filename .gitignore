@@ -456,3 +456,13 @@ fabric.properties
 /.vscode/
 
 # Local Netlify folder
+/.idea/.gitignore
+/.idea/jsLinters/jshint.xml
+/.idea/jsLibraryMappings.xml
+/.idea/KarenSutherlandNextSite.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/prettier.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
+/.idea/watcherTasks.xml
