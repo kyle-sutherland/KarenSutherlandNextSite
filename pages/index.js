@@ -1,4 +1,5 @@
 import { Content, EndNote } from "@components/content";
+import Card from "@components/card";
 
 export default function Home() {
   return (
@@ -12,25 +13,31 @@ export default function Home() {
       <div className="container-fluid bg-bleached-silk">
         <Content>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+            Welcome to Karen Sutherland's counseling practice. Empowering
+            individuals through evidence-based therapeutic conversations. Dive
+            into a journey of self-discovery, healing, and transformation with
+            Karen, a registered psychotherapist with a decade of experience.
+            Whether you're battling anxiety, depression, or seeking a path to
+            personal growth, Karen's expertise and compassionate approach are
+            here to guide you.
           </p>
         </Content>
       </div>
       <div className="cutout container-fluid px-4 bg-transparent text-dark">
         <div className="container cutout-text">
           <div className="container mx-auto md:w-1/3">
-            <p className={"text-slate text-4xl p-2"}>A bunch of nice text</p>
+            <p className="text-gray-900 font-semibold text-4xl p-2">
+              Discover a space where you're truly heard.
+            </p>
           </div>
           <div className="container mx-auto md:w-1/3">
-            <p className={"text-slate text-3xl p-2"}>
-              This is where you could place some nice, welcoming text about
-              Karen Sutherland. Who doesn't want to know about Karen Sutherland?
+            <p className="text-gray-900 text-3xl p-2">
+              Karen Sutherland, MSW, RSW, offers personalized therapy sessions
+              tailored to your unique needs. With a foundation in evidence-based
+              practices and a commitment to genuine collaboration, Karen ensures
+              every session is a step towards positive change. Explore her
+              programs and reach out for a transformative therapeutic
+              experience.
             </p>
           </div>
         </div>
@@ -38,24 +45,11 @@ export default function Home() {
       <EndNote>
         <div className="container-fluid col-auto card-row">
           <div className="grid-flow-col-dense grid gap-6">
-            <div className="container w-56 mx-auto p-3 border border-gray-400 rounded-md flex">
-              <div className="text-slate">
-                <img src="..." className="" alt="..." />
-                <div className="p-1">
-                  <h5 className="p-1">Card title</h5>
-                  <p className="p-1 pb-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a
-                    href="#"
-                    className="rounded-md bg-bosporus px-3 py-2 text-sm text-bleached-silk shadow-sm hover:bg-opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-thistle-blossom"
-                  >
-                    Go somewhere
-                  </a>
-                </div>
-              </div>
-            </div>
+            <Card
+              cardText="Some placeholder text"
+              cardTitle="Title"
+              buttonText="Go"
+            />
           </div>
         </div>
       </EndNote>
