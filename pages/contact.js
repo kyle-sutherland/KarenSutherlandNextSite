@@ -111,7 +111,9 @@ export default function Contact() {
         {/*  id="recaptcha-google"*/}
         {/*  onChange={() => setButtonDisabled(false)}*/}
         {/*/>*/}
-        <ActionButton type="submit" text="Submit" />
+        <div className="mt-6 flex justify-end gap-x-6">
+          <ActionButton type="submit" text="Submit" />
+        </div>
       </div>
     </form>
   );
