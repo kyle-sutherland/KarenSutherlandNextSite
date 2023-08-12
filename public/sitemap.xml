@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main Page -->
+    <url>
+        <loc>https://www.mindfulnessottawa.com</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Profile Page (Assuming based on the content) -->
+    <url>
+        <loc>https://www.mindfulnessottawa.com/profile</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Services Page (Assuming based on the content) -->
+    <url>
+        <loc>https://www.mindfulnessottawa.com/services</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Contact Page (Assuming based on the content) -->
+    <url>
+        <loc>https://www.mindfulnessottawa.com/contact</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Resources Page (Assuming based on the content) -->
+    <url>
+        <loc>https://www.mindfulnessottawa.com/resources</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- MBCT Group Program (Assuming based on the content) -->
+    <url>
+        <loc>https://www.mindfulnessottawa.com/mbct-group-program</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Mindfulness for ADHD (Assuming based on the content) -->
+    <url>
+        <loc>https://www.mindfulnessottawa.com/mindfulness-for-adhd</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>
