@@ -1,19 +1,19 @@
 import Header from "@components/header";
-import React, { useState } from "react";
-import { useRouter } from "next/router";
-import { Content } from "@components/content";
-import { ActionButton } from "@components/buttons";
-import Recaptcha from "react-google-recaptcha";
+import React, {useState} from "react";
+import {useRouter} from "next/router";
+import {Content} from "@components/content";
+// import { ActionButton } from "@components/buttons";
+// import Recaptcha from "react-google-recaptcha";
 
 export default function Contact() {
-  const SITE_RECAPTCHA_KEY = process.env.NEXT_PUBLIC_SITE_RECAPTCHA_KEY;
+  // const SITE_RECAPTCHA_KEY = process.env.NEXT_PUBLIC_SITE_RECAPTCHA_KEY;
   const [submitterName, setSubmitterName] = useState("");
   const router = useRouter();
   const confirmationScreenVisible =
     router.query?.success && router.query.success === "true";
   const formVisible = !confirmationScreenVisible;
-  const recaptchaRef = React.createRef();
-  const [buttonDisabled, setButtonDisabled] = React.useState(true);
+  // const recaptchaRef = React.createRef();
+  // const [buttonDisabled, setButtonDisabled] = React.useState(true);
 
   const confirmationMessage = (
     <React.Fragment>
@@ -103,15 +103,20 @@ export default function Contact() {
             />
           </div>
         </div>
-        <Recaptcha
-          ref={recaptchaRef}
-          sitekey={SITE_RECAPTCHA_KEY}
-          size="normal"
-          id="recaptcha-google"
-          onChange={() => setButtonDisabled(false)}
-        />
+        {/*<Recaptcha*/}
+        {/*  ref={recaptchaRef}*/}
+        {/*  sitekey={SITE_RECAPTCHA_KEY}*/}
+        {/*  size="normal"*/}
+        {/*  id="recaptcha-google"*/}
+        {/*  onChange={() => setButtonDisabled(false)}*/}
+        {/*/>*/}
         <div className="mt-6 flex justify-end gap-x-6">
-          <ActionButton type="submit" text="Submit" disabled={buttonDisabled} />
+          <button
+            className="rounded-md bg-bosporus px-3 py-2 text-sm text-bleached-silk shadow-sm hover:bg-opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-thistle-blossom"
+            type="submit"
+          >
+            Submit
+          </button>
         </div>
       </div>
     </form>
