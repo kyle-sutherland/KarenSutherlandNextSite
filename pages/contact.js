@@ -28,7 +28,9 @@ export default function Contact() {
         "g-recaptcha-response": recaptchaValue,
         ...state,
       }),
-    }).catch((error) => alert(error));
+    })
+      .then(() => router.push(form.getAttribute("action")))
+      .catch((error) => alert(error));
   };
 
   const confirmationMessage = (
