@@ -99,8 +99,9 @@ export default function Contact() {
             />
           </div>
         </div>
-        <div data-netlify-recaptcha="true"></div>
-        <div className="mt-6 flex items-center justify-end gap-x-6">
+
+        <div className="mt-6 flex justify-end gap-x-6">
+          <div data-netlify-recaptcha="true"></div>
           <ActionButton type="submit" text="Submit" />
         </div>
       </div>
