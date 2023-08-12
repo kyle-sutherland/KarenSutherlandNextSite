@@ -8,7 +8,7 @@ export default function Home() {
       <Content>
         <div className="container m-2 mt-0">
           <img
-            src="/portrait.jpg"
+            src="/portrait.png"
             className="portrait sm:float-left p-8"
             alt=""
             width="300px"
