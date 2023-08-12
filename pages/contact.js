@@ -28,9 +28,7 @@ export default function Contact() {
         "g-recaptcha-response": recaptchaValue,
         ...state,
       }),
-    })
-      .then(() => navigate(form.getAttribute("action")))
-      .catch((error) => alert(error));
+    }).catch((error) => alert(error));
   };
 
   const confirmationMessage = (
