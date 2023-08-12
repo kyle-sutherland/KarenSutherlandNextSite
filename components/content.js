@@ -1,9 +1,11 @@
 export function Content({ children }) {
-  return (<div className='container p-12 bg-bleached-silk rounded-b-lg'>
-    <div className='container text-slate text-xl'>
-      <>{children}</>
+  return (
+    <div className="container p-12 bg-bleached-silk rounded-b-l resize">
+      <div className="container text-slate text-xl">
+        <>{children}</>
+      </div>
     </div>
-  </div>);
+  );
 }
 
 export function EndNote({ children }) {

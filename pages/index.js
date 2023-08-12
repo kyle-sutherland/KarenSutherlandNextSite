@@ -43,7 +43,7 @@ export default function Home() {
         </div>
       </div>
       <EndNote>
-        <div className="container card-row flex">
+        <div className="container card-row md:flex">
           <Card
             cardText="Karen's profile on Psychology Today"
             cardTitle="Karen on Psychology Today"
