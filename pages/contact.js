@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import { Content } from "@components/content";
 import { ActionButton } from "@components/buttons";
 import Recaptcha from "react-google-recaptcha";
-import { encode } from "next/dist/shared/lib/base64-arraybuffer";
 
 export default function Contact() {
   const SITE_RECAPTCHA_KEY = process.env.NEXT_PUBLIC_SITE_RECAPTCHA_KEY;
@@ -13,25 +12,8 @@ export default function Contact() {
   const confirmationScreenVisible =
     router.query?.success && router.query.success === "true";
   const formVisible = !confirmationScreenVisible;
-  const [state, setState] = React.useState({});
   const recaptchaRef = React.createRef();
   const [buttonDisabled, setButtonDisabled] = React.useState(true);
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const recaptchaValue = recaptchaRef.current.getValue();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        "g-recaptcha-response": recaptchaValue,
-        ...state,
-      }),
-    })
-      .then(() => router.push(form.getAttribute("action")))
-      .catch((error) => alert(error));
-  };
 
   const confirmationMessage = (
     <React.Fragment>
@@ -55,7 +37,6 @@ export default function Contact() {
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       data-netlify-recaptcha="true"
-      onSubmit={handleSubmit}
     >
       <input
         type="hidden"
