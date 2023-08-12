@@ -73,19 +73,6 @@ export default function Home() {
                 informed from the very first conversation.
               </p>
             </li>
-
-            <li>
-              <p className="font-semibold text-2xl py-2">
-                Insurance and Payment:
-              </p>
-              <p className="text pb-5">
-                Karen is dedicated to making therapy accessible. Most Ontario
-                insurance plans cover her services, and she offers sliding scale
-                options to ensure everyone can benefit from therapeutic support.
-                Payments can be made via ACH Bank transfer, Cash, Cheque, or
-                Visa.
-              </p>
-            </li>
           </ul>
         </div>
       </Content>
