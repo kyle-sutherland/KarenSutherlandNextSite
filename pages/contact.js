@@ -2,6 +2,7 @@ import Header from "@components/header";
 import React, {useState} from "react";
 import {useRouter} from "next/router";
 import {Content} from "@components/content";
+import { ActionButton } from "@components/buttons";
 // import { ActionButton } from "@components/buttons";
 // import Recaptcha from "react-google-recaptcha";
 
@@ -110,14 +111,7 @@ export default function Contact() {
         {/*  id="recaptcha-google"*/}
         {/*  onChange={() => setButtonDisabled(false)}*/}
         {/*/>*/}
-        <div className="mt-6 flex justify-end gap-x-6">
-          <button
-            className="rounded-md bg-bosporus px-3 py-2 text-sm text-bleached-silk shadow-sm hover:bg-opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-thistle-blossom"
-            type="submit"
-          >
-            Submit
-          </button>
-        </div>
+        <ActionButton type="submit" text="Submit" />
       </div>
     </form>
   );
