@@ -46,9 +46,21 @@ export default function Home() {
         <div className="container-fluid col-auto card-row">
           <div className="grid-flow-col-dense grid gap-6">
             <Card
-              cardText="Some placeholder text"
-              cardTitle="Title"
-              buttonText="Go"
+              cardText="Karen's profile on Psychology Today"
+              cardTitle="Karen on Psychology Today"
+              buttonText="Pychology Today"
+            />
+            <Card
+              cardTitle="MBCT Group Program"
+              cardText="Mindfulness-Based Cognitive Therapy is designed to help people who experience depression and/or anxiety, and combines ..."
+              buttonText="Learn More"
+              link="https://www.psychologytoday.com/ca/therapists/karen-sutherland-ottawa-on/444308?gid=165510"
+            />
+            <Card
+              cardTitle="Mindfulness for ADHD"
+              cardText="A new evidence-based program, consisting of 8, 90-minute group sessions, where tools and skills are introduced ..."
+              buttonText="Learn More"
+              link="https://www.psychologytoday.com/ca/therapists/karen-sutherland-ottawa-on/444308?gid=226632"
             />
           </div>
         </div>

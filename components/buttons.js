@@ -6,7 +6,12 @@ const buttonStyle =
 export function LinkButton({ target, text }) {
   return (
     <>
-      <a href={target ? target : "#"} className={buttonStyle}>
+      <a
+        href={target ? target : "#"}
+        rel="noopener"
+        target="_blank"
+        className={buttonStyle}
+      >
         {text}
       </a>
     </>
