@@ -7,7 +7,7 @@ import Recaptcha from "react-google-recaptcha";
 import { encode } from "next/dist/shared/lib/base64-arraybuffer";
 
 export default function Contact() {
-  const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
+  const SITE_RECAPTCHA_KEY = process.env.NEXT_PUBLIC_SITE_RECAPTCHA_KEY;
   const [submitterName, setSubmitterName] = useState("");
   const router = useRouter();
   const confirmationScreenVisible =
@@ -124,7 +124,7 @@ export default function Contact() {
         </div>
         <Recaptcha
           ref={recaptchaRef}
-          sitekey={RECAPTCHA_KEY}
+          sitekey={SITE_RECAPTCHA_KEY}
           size="normal"
           id="recaptcha-google"
           onChange={() => setButtonDisabled(false)}
