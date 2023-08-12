@@ -16,7 +16,7 @@ export default function Home() {
             Welcome to Karen Sutherland's counseling practice. Empowering
             individuals through evidence-based therapeutic conversations. Dive
             into a journey of self-discovery, healing, and transformation with
-            Karen, a registered psychotherapist with a decade of experience.
+            Karen, a registered social worker with a decade of experience.
             Whether you're battling anxiety, depression, or seeking a path to
             personal growth, Karen's expertise and compassionate approach are
             here to guide you.
@@ -25,12 +25,12 @@ export default function Home() {
       </div>
       <div className="cutout container px-4 bg-transparent text-dark">
         <div className="container cutout-text">
-          <div className="container mx-auto lg:w-1/2 xl:w-1/3">
+          <div className="container px-5 md:px-0 mx-auto lg:w-1/2 xl:w-1/3">
             <p className="text-gray-950 font-semibold text-4xl p-2">
               Discover a space where you're truly heard.
             </p>
           </div>
-          <div className="container mx-auto lg:w-1/2 xl:w-1/3">
+          <div className="container px-5 md:px-0 mx-auto lg:w-1/2 xl:w-1/3">
             <p className="text-gray-950 text-3xl p-2">
               Karen Sutherland, MSW, RSW, offers personalized therapy sessions
               tailored to your unique needs. With a foundation in evidence-based
@@ -43,7 +43,7 @@ export default function Home() {
         </div>
       </div>
       <EndNote>
-        <div className="container card-row md:flex">
+        <div className="container card-row space-y-4 md:flex md:space-y-0 mx-auto my-4">
           <Card
             cardText="Karen's profile on Psychology Today"
             cardTitle="Karen on Psychology Today"

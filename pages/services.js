@@ -73,6 +73,36 @@ export default function Home() {
                 informed from the very first conversation.
               </p>
             </li>
+
+            <li>
+              <p className="font-semibold text-2xl py-2">
+                Insurance and Payment:
+              </p>
+              <ul>
+                <li>
+                  <strong>Fees:</strong>
+                </li>
+                <ul>
+                  <li>Individual Sessions $150</li>
+                  <li>Couple Sessions $165</li>
+                  <li>Sliding scale: apply if you may be eligible</li>
+                </ul>
+                <li>
+                  <strong>Pay by:</strong> ACH Bank transfer, Cash, Cheque, Visa
+                </li>
+                <li>
+                  <strong>Insurance:</strong>
+                </li>
+                <ul>
+                  <li>Blue Cross</li>
+                  <li>Green Shield Canada</li>
+                  <li>LifeWorks | Morneau Shepell</li>
+                  <li>Medavie Blue Cross</li>
+                  <li>Most Ontario Insurance Plans</li>
+                  <li>SunLife</li>
+                </ul>
+              </ul>
+            </li>
           </ul>
         </div>
       </Content>
