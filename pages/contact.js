@@ -13,10 +13,7 @@ export default function Contact() {
 
   const confirmationMessage = (
     <React.Fragment>
-      <p>
-        Thank you for submitting this form. Someone should get back to you
-        within 24-48 hours.
-      </p>
+      <p>Thank you for reaching out. Karen will get back to you soon.</p>
 
       <button
         className="btn btn-primary text-dark"
@@ -35,6 +32,7 @@ export default function Contact() {
       action="contact/?success=true"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      data-netlify-recaptcha="true"
     >
       <input
         type="hidden"
@@ -101,6 +99,7 @@ export default function Contact() {
             />
           </div>
         </div>
+        <div data-netlify-recaptcha="true"></div>
         <div className="mt-6 flex items-center justify-end gap-x-6">
           <ActionButton type="submit" text="Submit" />
         </div>
@@ -117,20 +116,20 @@ export default function Contact() {
             <p className="font-semibold py-2">
               Get in Touch with Karen Sutherland
             </p>
-            <p className="pb-1">
+            <p className="pb-2">
               Reaching out for support is a commendable step towards
               understanding and growth. Whether you have questions, need more
               information about the services offered, or are ready to begin your
               therapeutic journey, Karen is here to assist.
             </p>
 
-            <p className="pb-1">
+            <p className="pb-2">
               Karen offers both in-person and online sessions to cater to your
               convenience. If you prefer an online session, please mention it
               when scheduling your appointment.
             </p>
 
-            <p className="pb-1">
+            <p className="pb-2">
               If you have any questions or would like to schedule an
               appointment, please fill out the form and Karen will get back to
               you as soon as possible.
