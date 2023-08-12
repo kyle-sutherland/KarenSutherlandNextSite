@@ -18,10 +18,10 @@ export function LinkButton({ link, text, target, rel }) {
   );
 }
 
-export function ActionButton({ type, text }) {
+export function ActionButton({ type, text, disabled }) {
   return (
     <>
-      <button className={buttonStyle} type={type}>
+      <button className={buttonStyle} type={type} disabled={disabled}>
         {text}
       </button>
     </>

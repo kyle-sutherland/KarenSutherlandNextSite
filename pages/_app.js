@@ -8,6 +8,11 @@ function Application({ Component, pageProps }) {
       <Head>
         <title>Karen Sutherland Counseling</title>
         <link rel="icon" href="/favicon.png" />
+        <script
+          src="https://www.google.com/recaptcha/api.js"
+          async
+          defer
+        ></script>
       </Head>
       <Layout>
         <Component {...pageProps} />
