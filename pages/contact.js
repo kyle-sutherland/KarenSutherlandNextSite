@@ -36,7 +36,7 @@ export default function Contact() {
       action="contact/?success=true"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      data-netlify-recaptcha="true"
+      // data-netlify-recaptcha="true"
     >
       <input
         type="hidden"
