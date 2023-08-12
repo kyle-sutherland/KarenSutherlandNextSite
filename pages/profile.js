@@ -26,11 +26,10 @@ export default function Home() {
           <p className="pb-4">
             Karen views therapy as a joint effort. She believes that individuals
             come to therapy with their own unique experiences and challenges.
-            Her role is to provide a supportive environment where they can
-            explore these challenges, understand them, and work towards positive
-            change. While therapy can sometimes be a long journey, Karen
-            emphasizes that meaningful change can also occur in shorter
-            durations.
+            Her role is to provide an environment where they can explore these
+            challenges, understand them, and work towards positive change. While
+            therapy can sometimes be a long journey, Karen emphasizes that
+            meaningful change can also occur in shorter durations.
           </p>
 
           <p className="text-2xl font-semibold py-2">Areas of Expertise</p>
