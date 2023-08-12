@@ -3,13 +3,35 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { Content } from "@components/content";
 import { ActionButton } from "@components/buttons";
+import Recaptcha from "react-google-recaptcha";
+import { encode } from "next/dist/shared/lib/base64-arraybuffer";
 
 export default function Contact() {
+  const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
   const [submitterName, setSubmitterName] = useState("");
   const router = useRouter();
   const confirmationScreenVisible =
     router.query?.success && router.query.success === "true";
   const formVisible = !confirmationScreenVisible;
+  const [state, setState] = React.useState({});
+  const recaptchaRef = React.createRef();
+  const [buttonDisabled, setButtonDisabled] = React.useState(true);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const recaptchaValue = recaptchaRef.current.getValue();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        "g-recaptcha-response": recaptchaValue,
+        ...state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute("action")))
+      .catch((error) => alert(error));
+  };
 
   const confirmationMessage = (
     <React.Fragment>
@@ -33,6 +55,7 @@ export default function Contact() {
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       data-netlify-recaptcha="true"
+      onSubmit={handleSubmit}
     >
       <input
         type="hidden"
@@ -99,10 +122,15 @@ export default function Contact() {
             />
           </div>
         </div>
-
+        <Recaptcha
+          ref={recaptchaRef}
+          sitekey={RECAPTCHA_KEY}
+          size="normal"
+          id="recaptcha-google"
+          onChange={() => setButtonDisabled(false)}
+        />
         <div className="mt-6 flex justify-end gap-x-6">
-          <div data-netlify-recaptcha="true"></div>
-          <ActionButton type="submit" text="Submit" />
+          <ActionButton type="submit" text="Submit" disabled={buttonDisabled} />
         </div>
       </div>
     </form>
