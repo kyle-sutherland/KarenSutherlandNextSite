@@ -54,7 +54,7 @@ export default function Home() {
             accommodate different financial situations.
           </p>
 
-          // <p className="text-2xl font-semibold py-2">Conclusion</p>
+          <p className="text-2xl font-semibold py-2">Conclusion</p>
           <p className="pb-4">
             Karen Sutherland offers a therapeutic approach grounded in empathy,
             validation, and hope. If you're seeking a space to understand and
