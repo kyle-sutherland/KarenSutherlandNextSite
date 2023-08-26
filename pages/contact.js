@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Header from '@components/header';
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import {Content} from "@components/content";
+import { Content } from "@components/content";
 
 export default function Contact() {
   const [submitterName, setSubmitterName] = useState('');
