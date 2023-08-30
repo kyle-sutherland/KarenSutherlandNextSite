@@ -53,7 +53,7 @@ export default function Home({services, fees, insurance}) {
 }
 
 export async function getStaticProps() {
-  const url = process.env.STRAPI_URL;
+  const url = "https://mindfulnessottawa-cms.up.railway.app";
   const services = await axios.get(url + "/api/services");
   const fees = await axios.get(url + "/api/fees-entries");
   const insurance = await axios.get(url + "/api/insurance-entries");

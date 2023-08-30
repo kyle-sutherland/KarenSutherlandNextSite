@@ -23,7 +23,7 @@ export default function Home({resources}) {
 }
 
 export async function getStaticProps() {
-  const url = process.env.STRAPI_URL;
+  const url = "https://mindfulnessottawa-cms.up.railway.app";
   const resources = await axios.get(url + "/api/resources");
   return {
     props: {
