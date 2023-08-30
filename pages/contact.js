@@ -159,7 +159,7 @@ export default function Contact({paragraphs, details, heading}) {
 }
 
 export async function getStaticProps() {
-  const url = process.env.STRAPI_URL;
+  const url = env.STRAPI_URL;
   const paragraphs = await axios.get(url + "/api/contact-paragraphs");
   const details = await axios.get(url + "/api/contact-detail");
   const heading = await axios.get(url + "/api/contact-heading");

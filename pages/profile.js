@@ -2,7 +2,7 @@ import Header from "@components/header";
 import { Content } from "@components/content";
 import axios from "axios";
 
-const STRAPI_URL = process.env.STRAPI_URL;
+const STRAPI_URL = env.STRAPI_URL;
 
 export default function Home({content, portrait}) {
   const c = content.data
