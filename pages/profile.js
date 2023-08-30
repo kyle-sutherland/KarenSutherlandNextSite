@@ -2,7 +2,7 @@ import Header from "@components/header";
 import { Content } from "@components/content";
 import axios from "axios";
 
-const STRAPI_URL = "https://mindfulnessottawa-cms.up.railway.app";
+const STRAPI_URL = process.env.STRAPI_URL;
 
 export default function Home({content, portrait}) {
   const c = content.data

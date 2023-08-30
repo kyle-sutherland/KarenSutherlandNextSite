@@ -52,7 +52,7 @@ export default function Home({pageContent, cards}) {
 }
 
 export async function getStaticProps() {
-  const url = "https://mindfulnessottawa-cms.up.railway.app";
+  const url = process.env.STRAPI_URL;
   const homepage = await axios.get(url + "/api/homepage");
   const cards = await axios.get(url + "/api/homepage-cards");
   return {
