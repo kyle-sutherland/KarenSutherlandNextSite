@@ -3,10 +3,11 @@ import React, {useState} from "react";
 import {useRouter} from "next/router";
 import {Content} from "@components/content";
 import { ActionButton } from "@components/buttons";
+import axios from "axios";
 // import { ActionButton } from "@components/buttons";
 // import Recaptcha from "react-google-recaptcha";
 
-export default function Contact() {
+export default function Contact({paragraphs, details, heading}) {
   // const SITE_RECAPTCHA_KEY = process.env.NEXT_PUBLIC_SITE_RECAPTCHA_KEY;
   const [submitterName, setSubmitterName] = useState("");
   const router = useRouter();
@@ -117,6 +118,10 @@ export default function Contact() {
       </div>
     </form>
   );
+  
+  const p = paragraphs.data;
+  const d = details.data;
+  const h = heading.data;
 
   return (
     <>
@@ -125,38 +130,24 @@ export default function Contact() {
         <div className="grid grid-flow-row lg:grid-flow-col gap-16 m-2 mt-0">
           <div className="conainer">
             <p className="font-semibold py-2">
-              Get in Touch with Karen Sutherland
+              {h.attributes.heading}
             </p>
-            <p className="pb-2">
-              Reaching out for support is a commendable step towards
-              understanding and growth. Whether you have questions, need more
-              information about the services offered, or are ready to begin your
-              therapeutic journey, Karen is here to assist.
-            </p>
-
-            <p className="pb-2">
-              Karen offers both in-person and online sessions to cater to your
-              convenience. If you prefer an online session, please mention it
-              when scheduling your appointment.
-            </p>
-
-            <p className="pb-2">
-              If you have any questions or would like to schedule an
-              appointment, please fill out the form and Karen will get back to
-              you as soon as possible.
-            </p>
-
+            {p.map((item) => (
+              <>
+               {item.attributes.paragraph && <p className="pb-2">{item.attributes.paragraph}</p>}
+              </>
+            ))}
             <p className="font-semibold py-2">Contact Details:</p>
             <ul>
-              <li>Phone: (613) 702-1841</li>
+              <li>Phone: {d.attributes.phone}</li>
             </ul>
 
             <p className="py-2">Location:</p>
-            <p>2211 Riverside Drive, 404, Ottawa, ON K1H</p>
+            <p>{d.attributes.location}</p>
 
             <p className="py-2">Office Hours:</p>
-            <p>Monday to Friday: 9:00 AM - 6:00 PM</p>
-            <p>Weekends: By appointment only</p>
+            <p>{d.attributes.hours1}</p>
+            <p>{d.attributes.hours2}</p>
           </div>
           <div className="lg:w-96">
             {formVisible ? contactForm : confirmationMessage}
@@ -165,4 +156,18 @@ export default function Contact() {
       </Content>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const url = process.env.STRAPI_URL;
+  const paragraphs = await axios.get(url + "/api/contact-paragraphs");
+  const details = await axios.get(url + "/api/contact-detail");
+  const heading = await axios.get(url + "/api/contact-heading");
+  return {
+    props: {
+      paragraphs: paragraphs.data,
+      details: details.data,
+      heading: heading.data
+    }
+  }
 }

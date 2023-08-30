@@ -1,9 +1,11 @@
 import { Content, EndNote } from "@components/content";
 import Card from "@components/card";
+import axios from "axios";
 
-export default function Home() {
+export default function Home({pageContent, cards}) {
+  const c = cards.data
   return (
-    <>
+  <>
       <div className="container bg-thistle-blossom border-b border-bosporus rounded-t-lg">
         <img
           src="/kslogo-banner-large.svg"
@@ -13,13 +15,7 @@ export default function Home() {
       <div className="container-fluid bg-bleached-silk">
         <Content>
           <p>
-            Welcome to Karen Sutherland's counseling practice. Empowering
-            individuals through evidence-based therapeutic conversations. Dive
-            into a journey of self-discovery, healing, and transformation with
-            Karen, a registered social worker with a decade of experience.
-            Whether you're battling anxiety, depression, or seeking a path to
-            personal growth, Karen's expertise and compassionate approach are
-            here to guide you.
+            {pageContent.data.attributes.intro}
           </p>
         </Content>
       </div>
@@ -27,43 +23,43 @@ export default function Home() {
         <div className="container cutout-text">
           <div className="container px-5 md:px-0 mx-auto lg:w-1/2 xl:w-1/3">
             <p className="text-gray-950 font-semibold text-4xl p-2">
-              Discover a space where you're truly heard.
+              {pageContent.data.attributes.cutawayHeading}
             </p>
           </div>
           <div className="container px-5 md:px-0 mx-auto lg:w-1/2 xl:w-1/3">
             <p className="text-gray-950 text-3xl p-2">
-              Karen Sutherland, MSW, RSW, offers personalized therapy sessions
-              tailored to your unique needs. With a foundation in evidence-based
-              practices and a commitment to genuine collaboration, Karen ensures
-              every session is a step towards positive change. Explore her
-              programs and reach out for a transformative therapeutic
-              experience.
+              {pageContent.data.attributes.cutawayPg}
             </p>
           </div>
         </div>
       </div>
       <EndNote>
         <div className="container card-row space-y-4 md:flex md:space-y-0 mx-auto my-4">
-          <Card
-            cardText="Karen's profile on Psychology Today"
-            cardTitle="Karen on Psychology Today"
-            buttonText="Pychology Today"
-            link="https://www.psychologytoday.com/ca/therapists/karen-sutherland-ottawa-on/444308"
-          />
-          <Card
-            cardTitle="MBCT Group Program"
-            cardText="Mindfulness-Based Cognitive Therapy is designed to help people who experience depression and/or anxiety, and combines ..."
-            buttonText="Learn More"
-            link="https://www.psychologytoday.com/ca/therapists/karen-sutherland-ottawa-on/444308?gid=165510"
-          />
-          <Card
-            cardTitle="Mindfulness for ADHD"
-            cardText="A new evidence-based program, consisting of 8, 90-minute group sessions, where tools and skills are introduced ..."
-            buttonText="Learn More"
-            link="https://www.psychologytoday.com/ca/therapists/karen-sutherland-ottawa-on/444308?gid=226632"
-          />
+          {c.map((item) => (
+            <>
+              <Card
+                cardTitle = {item.attributes.title}
+                cardText = {item.attributes.description}
+                link = {item.attributes.link}
+                buttonText = {item.attributes.button_text} 
+              />
+            </>
+          ))}
         </div>
       </EndNote>
     </>
   );
 }
+
+export async function getStaticProps() {
+  const url = process.env.STRAPI_URL;
+  const homepage = await axios.get(url + "/api/homepage");
+  const cards = await axios.get(url + "/api/homepage-cards");
+  return {
+    props: {
+      pageContent: homepage.data,
+      cards: cards.data
+    }
+  }
+}
+
