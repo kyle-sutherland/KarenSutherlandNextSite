@@ -12,7 +12,7 @@ export default function Home({content, portrait}) {
     <Head>
       <meta
         name="description"
-        content="Karen Sutherland is a registered social worker based in Ottawa, ON. With a focus on individual needs, she offers tailored therapeutic sessions that emphasize collaboration and understanding."
+        content="Karen Sutherland is a registered social worker based in Ottawa, ON. With a focus on individual needs..."
         key="desc"
       />
     </Head>
