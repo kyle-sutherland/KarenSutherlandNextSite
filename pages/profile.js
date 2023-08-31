@@ -1,7 +1,7 @@
 import Header from "@components/header";
 import { Content } from "@components/content";
 import axios from "axios";
-import { Head } from "next/document";
+import Head from "next/head";
 
 const STRAPI_URL = process.env.STRAPI_URL;
 
@@ -12,7 +12,7 @@ export default function Home({content, portrait}) {
     <Head>
       <meta
         name="description"
-        content="Karen Sutherland is a registered social worker based in Ottawa, ON. With a focus on individual needs..."
+        content="Karen Sutherland is a registered social worker based in Ottawa, ON. With a focus on individual needs, she offers tailored therapeutic sessions that emphasize collaboration and understanding."
         key="desc"
       />
     </Head>
