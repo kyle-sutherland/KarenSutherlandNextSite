@@ -1,6 +1,7 @@
 import Header from "@components/header";
 import { Content } from "@components/content";
 import axios from "axios";
+import Head from "next/head";
 
 export default function Home({services, fees, insurance}) {
   const s = services.data;
@@ -8,6 +9,13 @@ export default function Home({services, fees, insurance}) {
   const i = insurance.data;
   return (
     <>
+    <Head>
+      <meta
+        name="description"
+        content="Karen sutherland offers inividual, group and couples therapy as well as minduflness study programs. Karen can also be contacted for a short consulation if you don't know where to start"
+        key="desc"
+      />
+    </Head>
       <Header title="Services" />
       <Content>
         <div className="m-2 mt-0">

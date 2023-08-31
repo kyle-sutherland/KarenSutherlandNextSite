@@ -32,6 +32,7 @@ export default function Card({
                 rel={rel ? rel : "noopener"}
                 link={link}
                 text={buttonText}
+                aria-label="External link to ${cardTitle}"
               />
             </div>
           </div>

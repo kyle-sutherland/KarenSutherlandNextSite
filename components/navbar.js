@@ -1,7 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 
 const navigation = [
-  // { name: "Home", href: "/", current: null },
+  { name: "Home", href: "/", current: null },
   { name: "Profile", href: "/profile", current: null },
   { name: "Services", href: "/services", current: null },
   { name: "Contact", href: "/contact", current: null },
@@ -28,7 +28,8 @@ export default function Navbar() {
                     src="/kslogo-navbar-graphic1.svg"
                     width={"240px"}
                     height={"64px"}
-                    alt=""
+                    alt="navigate to home"
+                    aria-label="Navigate to homepage"
                   />
                 </a>
                 <div className="md:hidden">
@@ -79,6 +80,7 @@ export default function Navbar() {
                           : "text-charcoal bg-inherit hover:bg-gray-200 hover:text-gray-900",
                         "rounded-md px-3 py-2"
                       )}
+                      aria-label={item.name}
                       aria-current={item.current ? "page" : undefined}
                     >
                       {item.name}

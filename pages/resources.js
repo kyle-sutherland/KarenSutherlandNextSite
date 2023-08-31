@@ -1,11 +1,19 @@
 import Header from "@components/header";
 import { Content } from "@components/content";
 import axios from "axios";
+import Head from "next/head";
 
 export default function Home({resources}) {
   const r = resources.data;
   return (
     <>
+    <Head>
+      <meta
+        name="description"
+        content=""
+        key="desc"
+      />
+    </Head>
       <Header title="Resources" />
       <Content>
         <div className="m-2 mt-0">

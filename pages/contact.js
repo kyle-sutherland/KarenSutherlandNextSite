@@ -4,6 +4,7 @@ import {useRouter} from "next/router";
 import {Content} from "@components/content";
 import { ActionButton } from "@components/buttons";
 import axios from "axios";
+import Head from "next/head";
 // import { ActionButton } from "@components/buttons";
 // import Recaptcha from "react-google-recaptcha";
 
@@ -125,6 +126,13 @@ export default function Contact({paragraphs, details, heading}) {
 
   return (
     <>
+    <Head>
+      <meta
+        name="description"
+        content="Get in touch with Karen Sutherland. Call or message her directlt from this form."
+        key="desc"
+      />
+    </Head>
       <Header title="Get in touch" />
       <Content>
         <div className="grid grid-flow-row lg:grid-flow-col gap-16 m-2 mt-0">

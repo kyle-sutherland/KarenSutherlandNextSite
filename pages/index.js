@@ -1,15 +1,24 @@
 import { Content, EndNote } from "@components/content";
 import Card from "@components/card";
 import axios from "axios";
+import Head from "next/head";
 
 export default function Home({pageContent, cards}) {
   const c = cards.data
   return (
   <>
+    <Head>
+      <meta
+        name="description"
+        content="Welcome to Karen Sutherland's counseling practice. Empowering individuals through evidence-based therapeutic conversations. Dive into a journey of self-discovery, healing, and transformation with Karen, a registered social worker with a decade of experience. Whether you're battling anxiety, depression, or seeking a path to personal growth, Karen's expertise and compassionate approach are here to guide you."
+        key="desc"
+      />
+    </Head>
       <div className="container bg-thistle-blossom border-b border-bosporus rounded-t-lg">
         <img
           src="/kslogo-banner-large.svg"
           className="bg-thistle-blossom md:rounded-t-lg"
+          alt="logo bannner. An abstract simplified lotus flower over text. Text: Karen Sutherland Counseling"
         />
       </div>
       <div className="container-fluid bg-bleached-silk">
