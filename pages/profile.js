@@ -24,6 +24,7 @@ export default function Home({content, portrait}) {
             className="portrait sm:float-left p-8"
             alt="A portrait of Karen Sutherland"
             width="300px"
+            height="300px"
           />
           <>
           {c.map((item) => (

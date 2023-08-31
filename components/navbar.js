@@ -1,4 +1,5 @@
 import { Disclosure } from "@headlessui/react";
+import Image from "next/image";
 
 const navigation = [
   { name: "Home", href: "/", current: null },
@@ -24,10 +25,10 @@ export default function Navbar() {
             <div>
               <div className="flex items-center justify-between md:block">
                 <a href="/">
-                  <img
+                  <Image
                     src="/kslogo-navbar-graphic1.svg"
-                    width={"240px"}
-                    height={"64px"}
+                    width={240}
+                    height={64}
                     alt="navigate to home"
                     aria-label="Navigate to homepage"
                   />

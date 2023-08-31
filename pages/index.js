@@ -2,6 +2,7 @@ import { Content, EndNote } from "@components/content";
 import Card from "@components/card";
 import axios from "axios";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Home({pageContent, cards}) {
   const c = cards.data
@@ -15,10 +16,12 @@ export default function Home({pageContent, cards}) {
       />
     </Head>
       <div className="container bg-thistle-blossom border-b border-bosporus rounded-t-lg">
-        <img
+        <Image
           src="/kslogo-banner-large.svg"
           className="bg-thistle-blossom md:rounded-t-lg"
           alt="logo bannner. An abstract simplified lotus flower over text. Text: Karen Sutherland Counseling"
+          height="560"
+          width="960"
         />
       </div>
       <div className="container-fluid bg-bleached-silk">
