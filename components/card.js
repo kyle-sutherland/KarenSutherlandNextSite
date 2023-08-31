@@ -12,7 +12,7 @@ export default function Card({
 }) {
   return (
     <>
-      <div className="container w-56 mx-auto p-3 border border-gray-400 rounded-md text-slate relative">
+      <div className="container w-56 mx-auto p-3 border border-gray-400 rounded-md text-charcoal relative">
         {/*<img*/}
         {/*  src={imageSrc ? imageSrc : ""}*/}
         {/*  className=""*/}
