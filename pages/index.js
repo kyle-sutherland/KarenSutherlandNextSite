@@ -22,6 +22,7 @@ export default function Home({pageContent, cards}) {
           alt="logo bannner. An abstract simplified lotus flower over text. Text: Karen Sutherland Counseling"
           height="560"
           width="960"
+          priority={true}
         />
       </div>
       <div className="container-fluid bg-bleached-silk">
