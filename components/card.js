@@ -1,8 +1,6 @@
 import { LinkButton } from "@components/buttons";
 
 export default function Card({
-  imageSrc,
-  imageAlt,
   cardText,
   cardTitle,
   buttonText,
@@ -13,11 +11,6 @@ export default function Card({
   return (
     <>
       <div className="container w-56 mx-auto p-3 border border-gray-400 rounded-md text-charcoal relative">
-        <img
-          src={imageSrc ? imageSrc : ""}
-          className=""
-          alt={imageAlt ? imageAlt : ""}
-        />
         <div className="grid-rows-3">
           <div className="row-span-1">
             <h5 className="p-1">{cardTitle ? cardTitle : "Card Title"}</h5>
