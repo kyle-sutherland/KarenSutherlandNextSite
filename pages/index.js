@@ -11,11 +11,11 @@ export default function Home({pageContent, cards}) {
     <Head>
       <meta
         name="description"
-        content="Welcome to Karen Sutherland's counseling practice. Empowering individuals through evidence-based therapeutic conversations. Dive into a journey of self-discovery, healing, and transformation with Karen, a registered social worker with a decade of experience. Whether you're battling anxiety, depression, or seeking a path to personal growth, Karen's expertise and compassionate approach are here to guide you."
+        content="Welcome to Karen Sutherland's counselling practice. Empowering individuals through evidence-based therapeutic conversations. Dive into a journey of self-discovery, healing, and transformation with Karen, a registered social worker with a decade of experience. Whether you're battling anxiety, depression, or seeking a path to personal growth, Karen's expertise and compassionate approach are here to guide you."
         key="desc"
       />
     </Head>
-      <div className="container bg-thistle-blossom border-b border-bosporus rounded-t-lg">
+      <div className="container bg-thistle-blossom border-b border-bosporus rounded-t-lg conent-center">
         <Image
           src="/kslogo-banner-large.svg"
           className="bg-thistle-blossom md:rounded-t-lg"

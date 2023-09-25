@@ -7,7 +7,7 @@ function Application({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Karen Sutherland Counseling</title>
+        <title>Karen Sutherland Counselling</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Script src="https://www.google.com/recaptcha/api.js" async defer />
