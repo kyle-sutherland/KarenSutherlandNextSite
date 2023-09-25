@@ -18,7 +18,7 @@ export default function Home({pageContent, cards}) {
       <div className="container bg-thistle-blossom border-b border-bosporus rounded-t-lg">
         <Image
           src="/kslogo-banner-large.svg"
-          className="bg-thistle-blossom md:rounded-t-lg center"
+          className="bg-thistle-blossom md:rounded-t-lg object-center"
           alt="logo bannner. An abstract simplified lotus flower over text. Text: Karen Sutherland Counselling"
           height="560"
           width="960"
