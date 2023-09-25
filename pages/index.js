@@ -19,7 +19,7 @@ export default function Home({pageContent, cards}) {
         <Image
           src="/kslogo-banner-large.svg"
           className="bg-thistle-blossom md:rounded-t-lg"
-          alt="logo bannner. An abstract simplified lotus flower over text. Text: Karen Sutherland Counseling"
+          alt="logo bannner. An abstract simplified lotus flower over text. Text: Karen Sutherland Counselling"
           height="560"
           width="960"
           priority={true}
