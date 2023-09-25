@@ -15,7 +15,7 @@ export default function Home({pageContent, cards}) {
         key="desc"
       />
     </Head>
-      <div className="container bg-thistle-blossom border-b border-bosporus rounded-t-lg items-center">
+      <div className="container bg-thistle-blossom border-b border-bosporus rounded-t-lg">
         <Image
           src="/kslogo-banner-large.svg"
           className="bg-thistle-blossom md:rounded-t-lg"
