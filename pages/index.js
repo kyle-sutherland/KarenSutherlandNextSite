@@ -32,7 +32,7 @@ export default function Home({pageContent, cards}) {
           </p>
         </Content>
       </div>
-      <div className="cutout container px-4 bg-transparent text-dark">
+      <div className="cutout container px-4 bg-transparent text-dark drop-shadow-[0_1.2px_1.2px_rgba(77,66,77,0.85)]">
         <div className="container cutout-text">
           <div className="container px-5 md:px-0 mx-auto lg:w-1/2 xl:w-1/3">
             <p className="text-gray-950 font-semibold text-4xl p-2">
