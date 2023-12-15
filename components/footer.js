@@ -1,7 +1,7 @@
 export default function Footer() {
   return (<>
     <footer>
-      <div className="z-20 w-full float bottom-0 text-center bg-bleached-silk p-1">
+      <div className="z-20 w-full fixed bottom-0 text-center bg-bleached-silk p-1">
         <p className={'text-xs font-light'}>Copyright &copy; Karen Martin Sutherland</p>
       </div>
     </footer>

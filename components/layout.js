@@ -8,7 +8,6 @@ export default function Layout({ children }) {
       <div className="page-container container lg:max-w-7xl mx-auto pb-8 md:pt-10 font-serif">
         <main>{children}</main>
       </div>
-      <Footer />
     </>
   );
 }
