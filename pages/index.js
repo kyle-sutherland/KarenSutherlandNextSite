@@ -4,7 +4,7 @@ import Card from "@components/card";
 export default function Home() {
   return (
     <>
-      <div className="container bg-thistle-blossom border-b border-bosporus rounded-t-lg">
+      <div className="container bg-thistle-blossom border-b border-bosporus rounded-t-lg flex justify-center">
         <img
           src="/kslogo-banner-large.svg"
           className="bg-thistle-blossom md:rounded-t-lg"
@@ -13,7 +13,7 @@ export default function Home() {
       <div className="container-fluid bg-bleached-silk">
         <Content>
           <p>
-            Welcome to Karen Sutherland's counseling practice. Empowering
+            Welcome to Karen Sutherland's counselling practice. Empowering
             individuals through evidence-based therapeutic conversations. Dive
             into a journey of self-discovery, healing, and transformation with
             Karen, a registered social worker with a decade of experience.

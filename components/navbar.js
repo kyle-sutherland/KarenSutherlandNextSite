@@ -1,11 +1,10 @@
 import { Disclosure } from "@headlessui/react";
 
 const navigation = [
-  // { name: "Home", href: "/", current: null },
+  { name: "Home", href: "/", current: null },
   { name: "Profile", href: "/profile", current: null },
   { name: "Services", href: "/services", current: null },
   { name: "Contact", href: "/contact", current: null },
-  { name: "Resources", href: "/resources", current: null },
 ];
 
 function classNames(...classes) {
@@ -77,7 +76,7 @@ export default function Navbar() {
                         item.current
                           ? "text-gray-900 bg-gray-200"
                           : "text-charcoal bg-inherit hover:bg-gray-200 hover:text-gray-900",
-                        "rounded-md px-3 py-2"
+                        "rounded-md px-3 py-2",
                       )}
                       aria-current={item.current ? "page" : undefined}
                     >
@@ -99,7 +98,7 @@ export default function Navbar() {
                     item.current
                       ? "text-gray-900 bg-gray-300"
                       : "text-charcoal bg-inherit hover:bg-gray-200 hover:text-gray-900",
-                    "block rounded-md px-3 py-2 text-base font-medium"
+                    "block rounded-md px-3 py-2 text-base font-medium",
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
