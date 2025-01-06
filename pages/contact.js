@@ -1,14 +1,14 @@
 import Header from "@components/header";
-import React, {useState} from "react";
-import {useRouter} from "next/router";
-import {Content} from "@components/content";
+import React, { useState } from "react";
+import { useRouter } from "next/router";
+import { Content } from "@components/content";
 import { ActionButton } from "@components/buttons";
 import axios from "axios";
 import Head from "next/head";
 // import { ActionButton } from "@components/buttons";
 // import Recaptcha from "react-google-recaptcha";
 
-export default function Contact({paragraphs, details, heading}) {
+export default function Contact({ paragraphs, details, heading }) {
   // const SITE_RECAPTCHA_KEY = process.env.NEXT_PUBLIC_SITE_RECAPTCHA_KEY;
   const [submitterName, setSubmitterName] = useState("");
   const router = useRouter();
@@ -101,7 +101,7 @@ export default function Contact({paragraphs, details, heading}) {
               id="message"
               name="message"
               required
-             className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-4 focus:ring-inset focus:ring-thistle-blossom-light sm:text-sm sm:leading-6"
+              className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-4 focus:ring-inset focus:ring-thistle-blossom-light sm:text-sm sm:leading-6"
               rows={3}
             />
           </div>
@@ -119,35 +119,36 @@ export default function Contact({paragraphs, details, heading}) {
       </div>
     </form>
   );
-  
+
   const p = paragraphs.data;
   const d = details.data;
   const h = heading.data;
 
   return (
     <>
-    <Head>
-      <meta
-        name="description"
-        content="Get in touch with Karen Sutherland. Call or message her directlt from this form."
-        key="desc"
-      />
-    </Head>
+      <Head>
+        <meta
+          name="description"
+          content="Get in touch with Karen Sutherland. Call or message her directlt from this form."
+          key="desc"
+        />
+      </Head>
       <Header title="Get in touch" />
       <Content>
         <div className="grid grid-flow-row lg:grid-flow-col gap-16 m-2 mt-0">
           <div className="conainer">
-            <p className="font-semibold py-2">
-              {h.attributes.heading}
-            </p>
+            <p className="font-semibold py-2">{h.attributes.heading}</p>
             {p.map((item) => (
               <>
-               {item.attributes.paragraph && <p className="pb-2">{item.attributes.paragraph}</p>}
+                {item.attributes.paragraph && (
+                  <p className="pb-2">{item.attributes.paragraph}</p>
+                )}
               </>
             ))}
             <p className="font-semibold py-2">Contact Details:</p>
             <ul>
-              <li>Phone: {d.attributes.phone}</li>
+              {/* <li>Phone: {d.attributes.phone}</li> */}
+              <li> Phone: 613-869-3992</li>
             </ul>
 
             <p className="py-2">Location:</p>
@@ -175,7 +176,7 @@ export async function getStaticProps() {
     props: {
       paragraphs: paragraphs.data,
       details: details.data,
-      heading: heading.data
-    }
-  }
+      heading: heading.data,
+    },
+  };
 }
