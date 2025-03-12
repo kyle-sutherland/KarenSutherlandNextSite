@@ -23,7 +23,7 @@ export default function Home() {
           </p>
         </Content>
       </div>
-      <div className="cutout container px-4 bg-transparent text-dark">
+      <div className="cutout container px-4 bg-white/30 backdrop-blur-md text-dark">
         <div className="container cutout-text">
           <div className="container px-5 md:px-0 mx-auto lg:w-1/2 xl:w-1/3">
             <p className="text-gray-950 font-semibold text-4xl p-2">
