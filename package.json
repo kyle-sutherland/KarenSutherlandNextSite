@@ -12,7 +12,7 @@
     "axios": "^1.13.2",
     "eslint": "^9.39.1",
     "eslint-config-next": "^15",
-    "next": "^15",
+    "next": "^15.5.9",
     "react": "^19",
     "react-dom": "^19",
     "react-google-recaptcha": "^3.1.0"
